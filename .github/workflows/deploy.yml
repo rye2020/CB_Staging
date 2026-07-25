@@ -20,5 +20,5 @@ jobs:
           REMOTE_USER: uscovere
           REMOTE_PORT: 22
           SOURCE: "./"
-          TARGET: "/public_html/staging/3708/wp-content/themes/twentytwentyone-child/"
+          TARGET: "/home/uscovere/public_html/staging/3708/wp-content/themes/twentytwentyone-child/"
           ARGS: "-avzr --delete --exclude='.git/' --exclude='.github/' --exclude='.gitignore'"
