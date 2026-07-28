@@ -1,0 +1,1846 @@
+/*
+ Theme Name:     Twenty Twenty-One Child
+ Theme URI:      Theme URI: https://wordpress.org/themes/twentytwentyfive/
+ Description:    Twenty Twenty-One Child Theme
+ Author:         Jerry Marlatt
+ Author URI:     http://www.us-covered-bonds.com
+ Template:       twentytwentyone
+ Version:        1.0.0
+*/
+/* @import url("../twentyeleven/style.css");
+
+/* =Theme customization starts here
+
+/*
+ *
+ *
+ *   What follows is from twentyeleven parent style.css
+ *
+ *
+ */
+ 
+ 
+
+/* =Structure
+----------------------------------------------- */
+
+body {
+	padding: 0 2em;
+}
+#page {
+	margin: 2em auto;
+	max-width: 1000px;
+}
+#branding hgroup {
+	margin: 0 7.6%;
+}
+#access div {
+	margin: 0 7.6%;
+}
+#primary {
+	float: left;
+	margin: 0 -26.4% 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0 34% 0 7.6%;
+	width: 58.4%;
+}
+#secondary {
+	float: right;
+	margin-right: 7.6%;
+	width: 18.8%;
+}
+
+/* Singular */
+.singular #primary {
+	margin: 0;
+}
+.singular #content,
+.left-sidebar.singular #content {
+	margin: 0 7.6%;
+	position: relative;
+	width: auto;
+}
+.singular .entry-header,
+.singular .entry-content,
+.singular footer.entry-meta,
+.singular #comments-title {
+	margin: 0 auto;
+	width: 68.9%;
+}
+
+/* Attachments */
+.singular .image-attachment .entry-content {
+	margin: 0 auto;
+	width: auto;
+}
+.singular .image-attachment .entry-description {
+	margin: 0 auto;
+	width: 68.9%;
+}
+
+/* Showcase */
+.page-template-showcase-php #primary,
+.left-sidebar.page-template-showcase-php #primary {
+	margin: 0;
+}
+.page-template-showcase-php #content,
+.left-sidebar.page-template-showcase-php #content {
+	margin: 0 7.6%;
+	width: auto;
+}
+.page-template-showcase-php section.recent-posts {
+	float: right;
+	margin: 0 0 0 31%;
+	width: 69%;
+}
+.page-template-showcase-php #main .widget-area {
+	float: left;
+	margin: 0 -22.15% 0 0;
+	width: 22.15%;
+}
+
+/* error404 */
+.error404 #primary {
+	float: none;
+	margin: 0;
+}
+.error404 #primary #content {
+	margin: 0 7.6%;
+	width: auto;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Right Content */
+.left-sidebar #primary {
+	float: right;
+	margin: 0 0 0 -26.4%;
+	width: 100%;
+}
+.left-sidebar #content {
+	margin: 0 7.6% 0 34%;
+	width: 58.4%;
+}
+.left-sidebar #secondary {
+	float: left;
+	margin-left: 7.6%;
+	margin-right: 0;
+	width: 18.8%;
+}
+
+/* One column */
+.one-column #page {
+	max-width: 690px;
+}
+.one-column #content {
+	margin: 0 7.6%;
+	width: auto;
+}
+.one-column #nav-below {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1.625em;
+}
+.one-column #secondary {
+	float: none;
+	margin: 0 7.6%;
+	width: auto;
+}
+/* Simplify the showcase template */
+.one-column .page-template-showcase-php section.recent-posts {
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+.one-column .page-template-showcase-php #main .widget-area {
+	float: none;
+	margin: 0;
+	width: auto;
+}
+.one-column .page-template-showcase-php .other-recent-posts {
+	border-bottom: 1px solid #ddd;
+}
+/* Simplify the showcase template when small feature */
+.one-column section.featured-post .attachment-small-feature {
+	border: none;
+	display: block;
+	height: auto;
+	max-width: 60%;
+	position: static;
+}
+.one-column article.feature-image.small {
+	margin: 0 0 1.625em;
+	padding: 0;
+}
+.one-column article.feature-image.small .entry-title {
+	font-size: 20px;
+	line-height: 1.3em;
+}
+.one-column article.feature-image.small .entry-summary {
+	height: 150px;
+	overflow: hidden;
+	padding: 0;
+	text-overflow: ellipsis;
+}
+.one-column article.feature-image.small .entry-summary a {
+	left: -9%;
+}
+/* Remove the margin on singular articles */
+.one-column.singular .entry-header,
+.one-column.singular .entry-content,
+.one-column.singular footer.entry-meta,
+.one-column.singular #comments-title {
+	width: 100%;
+}
+/* Simplify the pullquotes and pull styles */
+.one-column.singular blockquote.pull {
+	margin: 0 0 1.625em;
+}
+.one-column.singular .pull.alignleft {
+	margin: 0 1.625em 0 0;
+}
+.one-column.singular .pull.alignright {
+	margin: 0 0 0 1.625em;
+}
+.one-column.singular .entry-meta .edit-link a {
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.one-column.singular #author-info {
+	margin: 2.2em -8.8% 0;
+	padding: 20px 8.8%;
+}
+/* Make sure we have room for our comment avatars */
+.one-column .commentlist > li.comment {
+	margin-left: 102px;
+	width: auto;
+}
+/* Make sure the logo and search form don't collide */
+.one-column #branding #searchform {
+	right: 40px;
+	top: 4em;
+}
+/* Talking avatars take up too much room at this size */
+.one-column .commentlist > li.comment {
+	margin-left: 0;
+}
+.one-column .commentlist > li.comment .comment-meta,
+.one-column .commentlist > li.comment .comment-content {
+	margin-right: 85px;
+}
+.one-column .commentlist .avatar {
+	background: transparent;
+	display: block;
+	padding: 0;
+	top: 1.625em;
+	left: auto;
+	right: 1.625em;
+}
+.one-column .commentlist .children .avatar {
+	background: none;
+	padding: 0;
+	position: absolute;
+	top: 2.2em;
+	left: 2.2em;
+}
+.one-column #respond {
+	width: auto;
+}
+
+
+/* =Global
+----------------------------------------------- */
+
+body, input, textarea {
+	color: #373737;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.625;
+}
+body {
+	background: #e2e2e2;
+}
+#page {
+	background: #fff;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.625em;
+}
+
+/* Text elements */
+p {
+	margin-bottom: 1.625em;
+}
+ul, ol {
+	margin: 0 0 1.625em 2.5em;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.625em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.625em;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	font-family: Georgia, "Bitstream Charter", serif;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 3em;
+}
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+blockquote cite {
+	color: #666;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+pre {
+	background: #f4f4f4;
+	font: 13px "Courier 10 Pitch", Courier, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.625em;
+	overflow: auto;
+	padding: 0.75em 1.625em;
+}
+code, kbd, samp, var {
+	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+pre code {
+	font-size: inherit;
+}
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.625em;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: smaller;
+}
+
+/* Forms */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=number],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+textarea:focus {
+	color: #373737;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=number] {
+	padding: 3px;
+}
+input#s {
+	background: url(images/search.png) no-repeat 5px 6px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 14px;
+	height: 22px;
+	line-height: 1.2em;
+	padding: 4px 10px 4px 28px;
+}
+input#searchsubmit {
+	display: none;
+}
+
+/* Links */
+a {
+	color: #1982d1;
+	text-decoration: none;
+}
+a:focus,
+a:active,
+a:hover {
+	text-decoration: underline;
+}
+
+/* Assistive text */
+.assistive-text,
+.screen-reader-text {
+	position: absolute !important;
+	clip-path: inset(50%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+}
+
+a.assistive-text:focus,
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 6px;
+	line-height: normal;
+	padding: 17px 22px 15px;
+	text-decoration: none;
+	top: 7px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* =Header
+----------------------------------------------- */
+
+#branding {
+	border-top: 2px solid #bbb;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 9999;
+}
+#site-title {
+	margin-right: 270px;
+	padding: 3.65625em 0 0;
+}
+#site-title a {
+	color: #111;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+	text-decoration: none;
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color: #1982d1;
+}
+#site-description {
+	color: #7a7a7a;
+	font-size: 14px;
+	margin: 0 270px 3.65625em 0;
+}
+#branding img {
+	height: auto;
+	display: block;
+	width: 100%;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	background: #222; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#252525, #0a0a0a);
+	background: -o-linear-gradient(#252525, #0a0a0a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 6px;
+	width: 100%;
+}
+#access ul {
+	font-size: 13px;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+}
+#access a {
+	color: #eee;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
+}
+#access ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 3.333em;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background: #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background: #efefef;
+}
+#access li:hover > a,
+#access a:focus {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	font-weight: bold;
+}
+
+/* Search Form */
+#branding #searchform {
+	position: absolute;
+	top: 3.8em;
+	right: 7.6%;
+	text-align: right;
+}
+#branding #searchform div {
+	margin: 0;
+}
+#branding #s {
+	float: right;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-duration: 400ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	-o-transition-duration: 400ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	width: 72px;
+}
+#branding #s:focus {
+	background-color: #f9f9f9;
+	width: 196px;
+}
+#branding #searchsubmit {
+	display: none;
+}
+#branding .only-search #searchform {
+	top: 5px;
+	z-index: 1;
+}
+#branding .only-search #s {
+	background-color: #666;
+	border-color: #000;
+	color: #222;
+}
+#branding .only-search #s,
+#branding .only-search #s:focus {
+	width: 85%;
+}
+#branding .only-search #s:focus {
+	background-color: #bbb;
+}
+#branding .with-image #searchform {
+	top: auto;
+	bottom: -27px;
+	max-width: 195px;
+	height: 32px;
+}
+#branding .only-search + #access div {
+	padding-right: 205px;
+}
+
+/*
+*
+*  End of insert from twentyeleven parent
+*
+*
+*/
+
+
+/*----------------------------------------------------------------------*/
+/*--------------------------FORMAT ALL HEADERS--------------------------*/
+/*----------------------------------------------------------------------*/
+
+/* control spacing between #branding and #main  */
+#site-title {
+	padding: 0;
+	margin: 0 0 0 -9%;  /* Adjust Site Title  */
+}
+
+#site-description {
+	margin: 0 0 0 -9%;  /* Adjust Site Description */
+	/*color :red !important;         MERRY CHRISTMAS*/
+	/*font-size: 200%;               MERRY CHRISTMAS*/
+}
+
+#branding #searchform {
+	top: 1.8em; 
+}
+/*! ---END FORMAT ALL HEADERS-----*/
+
+/*----------------------------------------------------------------------*/
+/*--------------------------FORMAT ALL PAGES----------------------------*/
+/*----------------------------------------------------------------------*/
+
+body  {
+        padding: 0 0;
+}
+
+#page {
+		width: 100%;
+        max-width: 1920px;  
+}
+
+#branding {
+		margin: 0 5px;
+}
+
+#main {
+	padding-top:0.25em;
+        font-size:small; 
+        background: white;
+		margin: 0;
+}
+
+#content {
+     margin: 0 34% 0 3.8%;
+     width: 63.5%;
+}
+
+#container {
+      background: white;
+}
+
+#jmarchive {
+      background: white;
+}
+
+article.intro {
+	display: none; /* delete unnecessary extra vertical space */
+}
+
+article.j1 {
+	margin: 0 0 1.625em; /* format my commentary pages since no longer part of article.intro */
+}
+/*!---END FORMAT ALL PAGES----*/
+
+/*----------------------------------------------------------------------*/
+/*--------------------------FORMAT HOME PAGE----------------------------*/
+/*----------------------------------------------------------------------*/
+
+.Fcontainer {
+	border-style:  solid;
+    border-color: white green green white;
+    border-width: 2px 2px 3px 2px;
+	}
+
+.Fcontainer p {
+	margin:0 0 5px 0;  /* no spacing around paragraphs */
+}
+
+.Fcontainer ul {
+	display: block;
+	list-style-type: disc;
+        margin: 0 0 0 1; /*  more compact listing */ 
+	padding: 0px;
+}
+
+.Fcontainer ul li {
+	padding: 0px;  /*  more compact listing */
+}
+
+.Fhspace {
+     background-color: #006633;
+     height: 5px;
+     margin: 0;
+}
+
+#j1mleaf {
+	border:0;
+ 	padding-left: 6px;
+	padding-bottom: 2px;
+	margin: 0;
+}
+ 
+	img.j2photo {
+		float: left;
+		padding-right: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	img.j3photo {
+		padding-left: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	article,
+	li .Fcontainer {
+		text-align: justify;
+	}
+
+	hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		height: 3px;
+		background-color: blue;
+	}
+
+	.j1col4 {
+		-webkit-column-gap: 20px;
+		/* Chrome, Safari, Opera */
+		-moz-column-gap: 20px;
+		/* Firefox */
+		column-gap: 20px;
+	}
+
+	img.j1infog {
+		margin: 5px 0 5px 0;
+		width: 100%;
+	}
+
+	.home-box {
+		overflow:visible;
+	}
+
+	.home-photo {
+		height: 370px;
+	}
+
+	.home-photo img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		object-position: center 50%;
+		margin: -3px 0 0 0;
+	}
+
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------CANADIAN ISSUERS/HOME PAGE--------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+        table.CDN2016 th {
+			font-weight: bold;
+			font-size: 100%;
+			font-family: georgia;
+			text-align: center;
+		}
+
+        table.CDN2016 {
+			background-color: #e6ccb2;
+			border-collapse: collapse;
+			margin: 0;
+			table-layout: auto;
+			width: 100%;
+		}
+
+
+		table.CDN2016 td {
+			border: solid 1px black;
+			text-align: center;
+		}
+
+		table#CDNcapacity {
+			background-color: #e6ccb2;
+			border-collapse: collapse;
+			margin: 0;
+		}
+
+		table#CDNcapacity th {
+			width: 80px;
+			font-weight: bold;
+			font-size: 100%;
+			font-family: georgia;
+			text-align: center;
+		}
+
+		table#CDNcapacity td {
+			border: solid 1px black;
+			text-align: center;
+		}
+
+		table#CDNmax {
+			background-color: #e6ccb2;
+			border-collapse: collapse;
+			margin: 0;
+		}
+
+		table#CDNmax th {
+			width: 80px;
+			font-weight: bold;
+			font-size: 100%;
+			font-family: georgia;
+			text-align: center;
+		}
+
+		table#CDNmax td {
+			border: solid 1px black;
+			text-align: center;
+		}
+
+/*!----END FORMAT HOME PAGE-----*/
+
+/*----------------------------------------------------------------------*/
+/*--------------------------FORMAT HOME PAGE BOXES----------------------*/
+/*----------------------------------------------------------------------*/
+
+.Fbox table {
+	width:100%; 
+	border-collapse: collapse;
+	margin: 1% 0 1% 0; 
+	clear:both;
+}
+.Fbox td {
+	border: 2px solid black; 
+	font-family:'Georgia'; 
+	font-variant:small-caps; 
+	font-size:100%; 	
+	color: black;
+	text-align: center;
+	font-weight:700; 
+}
+/*! ---END FORMAT HOME PAGE BOXES----*/
+
+/*----------------------------------------------------------------------*/
+/*--------------------------FORMAT POSTS--------------------------------*/
+/*----------------------------------------------------------------------*/
+
+nav#nav-single {
+	padding: 0; /*   Remove padding below Prev/Next navigation on singular post  */
+}
+.entry-header .entry-title {
+	padding-top: 1em; /* on Primary Page pad above the title for the first post */
+	padding-bottom: 0;  /* Remove padding under title of singular post  */
+}
+.entry-title {
+	font-size:20px;  /* reduce font size for post titles  */
+}
+.entry-content h4 {
+	font-weight:bold;
+}
+.singular #content {
+	margin: 0; /*  adjust Post margins */
+}
+.singular .entry-title {
+	font-size: 20px;
+	padding-top: 0;
+}
+.singular .entry-content {
+	width: 90%;
+	padding: 0;
+}
+.singular .entry-header {
+	width: 90%;
+}
+.singular .hentry {
+	padding: 0;  /* Remove padding above the title of a singular post */
+}
+nav.pagination {
+	clear: both;
+	width: 30% !important;
+}
+div.pagination {
+	clear: both;
+	width: 30%;
+}
+div.page-link {
+	font-weight: bold;
+	clear: both;
+}
+p.post-nav-links {
+	font-weight: bold;
+	font-size: 200%;
+}
+div.jmpost {
+	max-width:auto;
+}
+div.jmpost p {font-family: georgia; font-size: 110%; text-align: justify;}
+
+/*! ---END FORMAT POSTS----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT PAGE NAME AND SPACING---------------------*/
+/*----------------------------------------------------------------------*/
+
+/*
+*----------kill display of .entry-title [PAGE NAME] and spacing
+*              because we will use DEFAULT TEMPLATE to avoid RECENT POSTS  at bottom
+*/
+article[class$="hentry"] {
+	display: none;
+}
+article.hentry.type-post.status-publish {width:750px;}
+/*! ---END FORMAT PAGE NAME AND SPACING----*/
+
+/*----------------------------------------------------------------------*/
+/*----------------------------FORMAT MENUS------------------------------*/
+/*----------------------------------------------------------------------*/
+
+nav#access {
+	margin: 0 ;  /* Remove the padding after the menu navigation bar */
+	background: blue /*hsla(240,50%,60%,0.8)*/;      /* change background color to BLUE  */
+}
+
+#access {
+	margin: 0;
+}
+
+#access li {
+	height: 30px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+#access li:first-of-type {
+	margin-left: 10px;
+}
+
+/*  CHANGE RIGHT MARGIN FROM 7.6% --> 0       */
+#access div {
+	margin: 0;
+}
+
+/*  REDUCE PADDING RIGHT  FROM 1.2125em -->  0.500em*/
+#access a {
+	Padding: 0 .500em;
+}
+
+/*! ---END FORMAT MENUS------*/
+
+/*----------------------------------------------------------------------*/
+/*-------------------------FORMAT TOPIC HEADER--------------------------*/
+/*----------------------------------------------------------------------*/
+
+.j2header h1 {
+	margin-top: 2px;
+}
+/*! ---END FORMAT TOPIC HEADER----*/
+
+/*----------------------------------------------------------------------*/
+/*------------FORMAT COVERED BOND ISSUANCE TABLES-----------------------*/
+/*----------------------------------------------------------------------*/
+
+div#BuildCBTable {
+	display: grid; 
+	place-items: center;
+	flex-shrink: 0; 
+}
+
+div.CBTable-center {
+	width: 1600;
+	margin: auto; 
+}
+
+h1.t1CanadianCBD, h1.t1USDCB {
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	font-size: 24px;
+}
+
+table.t1CanadianCBD {
+	margin:0 0 0 0%;
+	max-width: 1600px;  
+	border-collapse: collapse;
+/*-------christmas------------*/
+	background-color: white;
+	padding: 5px;
+/*----------end-----------------*/
+}
+
+table.t1CanadianCBD th {
+	color: white;
+	text-align: left;
+  	vertical-align: bottom;
+	background-color: blue;
+	font-size: 100%;
+	height: 20px;
+}
+
+table.t1CanadianCBD td {
+	vertical-align:top;
+	font-size: 90%;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-color: grey;
+	border-width: 1px;
+        color: black;
+}
+
+table.t1CanadianCBD th, td {
+	padding: 1px 5px;
+}
+
+
+table.t1CanadianCBD th:nth-child(1) {  
+    column-width: 80;
+    text-align: left; }  /* align region left  */
+table.t1CanadianCBD th:nth-child(2) {  
+    column-width: 220;
+    text-align: left; }  /* align region left  */
+table.t1CanadianCBD th:nth-child(3) {  
+    column-width: 30;
+    text-align: left; }  /* align region left  */
+table.t1CanadianCBD th:nth-child(4) {  
+    column-width: 50;
+    text-align: left; }  /* align series left  */
+table.t1CanadianCBD th:nth-child(5) {  
+    column-width: 25;
+    text-align: right; } /* align currency right  */
+table.t1CanadianCBD th:nth-child(6) {  
+    column-width: 35;
+    text-align: right; } /* align amount right  */
+table.t1CanadianCBD th:nth-child(7) {  
+    column-width: 25;
+    text-align: right; } /* align coupon right  */
+table.t1CanadianCBD th:nth-child(8) {  
+    column-width: 60;
+    text-align: right; } /* align maturity right  */
+table.t1CanadianCBD th:nth-child(9) {  
+    column-width: 25;
+    text-align: right; } /* align tenor right  */
+table.t1CanadianCBD th:nth-child(10) {  
+    column-width: 25;
+    text-align: right; } /* align spread right  */
+table.t1CanadianCBD th:nth-child(11) {  
+    column-width: 60;
+    text-align: right; } /* align type right  */
+
+table.t1CanadianCBD tr:nth-child(even) { background-color: #B2B2FF;   }
+table.t1CanadianCBD td:nth-child(3) {  text-align: left; }  /* align region left  */
+table.t1CanadianCBD td:nth-child(4) {  text-align: left; }  /* align series left  */
+table.t1CanadianCBD td:nth-child(5) {  text-align: right; } /* align currency right  */
+table.t1CanadianCBD td:nth-child(6) {  text-align: right; } /* align amount right  */
+table.t1CanadianCBD td:nth-child(7) {  text-align: right; } /* align coupon right  */
+table.t1CanadianCBD td:nth-child(8) {  text-align: right; } /* align maturity right  */
+table.t1CanadianCBD td:nth-child(9) {  text-align: right; } /* align tenor right  */
+table.t1CanadianCBD td:nth-child(10) {  text-align: right; } /* align spread right  */
+table.t1CanadianCBD td:nth-child(11) {  text-align: right; } /* align type right  */
+
+
+/*! ---END FORMAT COVERED BOND ISSUANCE TABLES-----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT CANADIAN CB BY SERIES---------------------*/
+/*----------------------------------------------------------------------*/
+
+h1.t1canadianBS {
+	margin-bottom: 0;
+	margin-top: 0em;
+	text-align: center;
+	font-size: 200%;
+}
+table.t1canadianBS {
+	width: 80%;
+	margin: 0 0 0 10%;
+	border-collapse: collapse;
+}
+
+table.t1canadianBS th {
+	color: white;
+	text-align: center;
+	background-color: blue;
+	font-size: 100%;
+}
+table.t1canadianBS tr:nth-child(odd) {
+	background-color: LightGray;
+}
+table.t1canadianBS td {
+	text-align: center;
+	vertical-align: top;  /* for the Year column */
+	height: 20px;
+	font-size: 90%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+/*! ---END FORMAT CANADIAN CB BY SERIES-----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT CANADIAN CB BY YEAR-----------------------*/
+/*----------------------------------------------------------------------*/
+
+h1.t1canadianCBY {
+	margin-bottom: 0;
+	margin-top: 0em;
+	text-align: center;
+	font-size: 200%;
+}
+table.t1canadianCBY {
+	width: 80%;
+	margin: 0 0 0 10%;
+	border-collapse: collapse;
+}
+
+table.t1canadianCBY th {
+	color: white;
+	text-align: center;
+	background-color: blue;
+	font-size: 100%;
+}
+table.t1canadianCBY tr:nth-child(odd) {
+	background-color: LightGray;
+}
+table.t1canadianCBY td {
+	text-align: center;
+	vertical-align: top;  /* for the Year column */
+	height: 20px;
+	font-size: 90%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+
+table.t1canadianCBY a {
+	font-size: 85%;
+}
+/*! ---END FORMAT CANADIAN CB BY YEAR-----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT CANADIAN CB DOCS--------------------------*/
+/*----------------------------------------------------------------------*/
+
+h1#cdndocs {
+	margin-bottom: 0;
+	margin-top: 0em;
+	text-align: center;
+	font-size: 200%;
+}
+table#cdndocs {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+table#cdndocs th {
+	color: white;
+	text-align: center;
+	background-color: blue;
+	font-size: 100%;
+}
+
+table#cdndocs tr:nth-child(odd) {
+	background-color: LightGray;
+}
+table#cdndocs td {
+	text-align: left;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1px;
+	font-size: 12px;
+	padding-left: 5px;
+}
+table#cdndocs td:first-of-type {
+        color: white;
+        background-color: blue;
+        font-weight: bold;
+        max-width: 100px;
+}
+td.t1spacer {
+	border: none;
+	height: 1em;
+	background-color: gray;
+}
+/*! ---END FORMAT CANADIAN CB DOCS-----*/
+
+/*----------------------------------------------------------------------*/
+/* ---------AGGREGATE CB TABLES WITH SELECTION FILTERS------------------*/
+/*----------------------------------------------------------------------*/
+
+div#top {
+	display: flex; 
+	justify-content:space-between;
+	justify-content: center;
+}
+
+/*! ---END FORMAT CB TABLES WITH SELECTION FILTERS-----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT READ-TABLES-------------------------------*/
+/*----------------------------------------------------------------------*/
+
+table.RDXtable td{
+	min-width: 70px;  
+	word-wrap: break-word;
+}
+
+/*!---END FORMAT READ-TABLES---*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT LEGISLATION TABLE-------------------------*/
+/*----------------------------------------------------------------------*/
+
+h1.t1USLegislation {
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	font-size: 200%;
+}
+
+table.t1USLegislation {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #B5C7E2;
+}
+
+table.t1USLegislation th {
+	color: white;
+	text-align: center;
+	background-color: blue;
+	font-size: 125%;
+}
+
+table.t1USLegislation td {
+	text-align: left;
+	border: 1px solid black;
+	font-size: 100%;
+	padding-left: 5px;
+}
+/*! ---END FORMAT LEGISLATION TABLE----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT USD ISSUER URL TABLES---------------------*/
+/*----------------------------------------------------------------------*/
+
+h1.t1USDI {
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	font-size: 24px;
+}
+
+table.t1USDI {
+	margin:0 0 0 0%;
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table.t1USDI th {
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	background-color: blue;
+	font-size: 16px;
+	height: 20px;
+}
+table.t1USDI th:first-child {
+	width: 25%;
+	background-color: green;
+}
+
+table.t1USDI td {
+	text-align: left;
+	vertical-align:top;
+	font-size: 12px;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+/*! ---END FORMAT USD ISSUER URLS----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT CB QUERIES TABLE--------------------------*/
+/*----------------------------------------------------------------------*/
+
+h1.t1CBQueries {
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	font-size: 24px;
+}
+
+table.t1CBQueries {
+	margin:0 0 0 0%;
+	width: 100%;
+	border-collapse: collapse;
+        background-color: white;
+}
+
+table.t1CBQueries th {
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	background-color: blue;
+	font-size: 100%;
+	height: 20px;
+}
+table.t1CBQueries tr:nth-child(even) {
+	background-color: LightGray;
+}
+table.t1CBQueries td {
+	vertical-align:top;
+	font-size: 90%;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+table.t1CBQueries td:nth-child(4) {   /* align currency center  */
+        text-align: center;
+}
+table.t1CBQueries td:nth-child(5) {   /* align query left  */
+        text-align: left;
+}
+/*! ---END FORMAT CB QUERIES TABLE---*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT USEFUL LINKS------------------------------*/
+/*----------------------------------------------------------------------*/
+
+table.Ulink {
+      background-color: white; 
+      float: left; 
+      width: 100%; 
+      border-collapse: collapse; 
+      table-layout: fixed;
+}
+table.Ulink td {
+      vertical-align:top;
+      border-width: 2px;
+      border-color: grey; 
+      padding-left: 1em; 
+      padding-bottom: 1em;
+      border-bottom-style:none;
+      border-left-style:none; 
+      border-right-style:solid; 
+      border-top-style:none;
+}
+table.Ulink td:last-of-type {
+      border-right-style:none;
+}
+/*! ---END FORMAT USEFUL LINKS----*/
+
+/*----------------------------------------------------------------------*/
+/*--------------------------FORMAT COLUMNS------------------------------*/
+/*----------------------------------------------------------------------*/
+/*
+*     BLOCK CONTROL
+*/
+.keeptogether  {
+      -webkit-column-break-inside:  avoid;
+      -moz-column-break-inside: avoid;
+      -column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+     }
+.breakbefore  {
+      -webkit-column-break-before:  always;
+      -moz-column-break-before: always;
+      -column-break-before: always;
+      page-break-before: always;
+      break-before: always;
+     }
+
+/*
+*     TWO COLUMNS WITH DIVIDER
+*/
+@media   screen and (min-width: 420px) {
+.j1col2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+     -moz-column-count: 2; /* Firefox */
+     column-count: 2;
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+     -moz-column-gap: 20px; /* Firefox */
+     column-gap: 20px;
+    -webkit-column-rule: 2px outset #006633; /* Chrome, Safari, Opera */
+     -moz-column-rule: 2px outset #006633; /* Firefox */
+     column-rule: 2px outset #006633;
+      -webkit-column-break-inside:  auto;
+      -moz-column-break-inside: auto;
+      -column-break-inside: auto;
+      page-break-inside: auto;	
+      break-inside: auto;
+     }
+p.j1col2 {
+      -webkit-column-break-inside:  auto;
+      -moz-column-break-inside: auto;
+      -column-break-inside: auto;
+      page-break-inside: auto;
+      break-inside: auto;
+     }
+  }
+/*
+*       THREE COLUMNS WITH DIVIDER
+*/
+@media   screen and (min-width: 420px) {
+.j1col3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+     -moz-column-count: 3; /* Firefox */
+     column-count: 3;
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+     -moz-column-gap: 20px; /* Firefox */
+     column-gap: 20px;
+     -webkit-column-rule: 2px outset #006633; /* Chrome, Safari, Opera */
+     -moz-column-rule: 2px outset #006633; /* Firefox */
+     column-rule: 2px outset #006633;
+     }
+  }
+/*
+*     FOUR COLUMNS WITH DIVIDER
+*/
+@media  screen and (min-width: 420px) {
+.j1col4 {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+     -moz-column-count: 4; /* Firefox */
+     column-count: 4;
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+     -moz-column-gap: 20px; /* Firefox */
+     column-gap: 20px;
+     -webkit-column-rule: 2px outset #006633; /* Chrome, Safari, Opera */
+     -moz-column-rule: 2px outset #006633; /* Firefox */
+     column-rule: 2px outset #006633;
+     }
+  }
+
+/*
+*        TWO COLUMNS NO DIVIDER
+*/
+@media   screen and (min-width: 420px) {
+.j1col2no {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+     -moz-column-count: 2; /* Firefox */
+     column-count: 2;
+    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+     -moz-column-gap: 2em; /* Firefox */
+     column-gap: 2em;
+     }
+  }
+/*
+*         THREE COLUMNS NO DIVIDER
+*/
+@media  screen and (min-width: 420px) {
+.j1col3no {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+     -moz-column-count: 3; /* Firefox */
+     column-count: 3;
+    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+     -moz-column-gap: 2em; /* Firefox */
+     column-gap: 2em;
+     }
+  }
+/*
+*        FOUR COLUMNS NO DIVIDER
+*/
+@media  screen and (min-width: 420px) {
+.j1col4no {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+     -moz-column-count: 4; /* Firefox */
+     column-count: 4;
+    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+     -moz-column-gap: 2em; /* Firefox */
+     column-gap: 2em;
+     }
+  }
+
+/*! ---END FORMAT COLUMNS----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------RESPONSIVE ADJUSTMENTS---------------------------*/
+/*----------------------------------------------------------------------*/
+
+    .home-container {
+	    display: flex;
+	    flex-wrap: nowrap;
+	    -webkit-flex: 1;
+/*	    -moz-flex: 1;
+	    -ms-flex: 1;
+	    -webkit-flex-direction: column;
+	    -moz-flex-direction: column;
+	    -ms-flex-direction: column;*/
+    }
+@media only screen and (max-width: 1024) {  /* Apply to all mobile devices */
+	.home-box {
+		width: 100%;
+		max-width: none;
+	}
+		
+	#access div {
+		padding-right: 0px;      /*  eliminate the padding on the right for the menu  */
+	}
+	#access ul {                     /*  eliminate the padding on the right for the menu  */
+		margin: 0;
+	}
+	img.j1photo {
+		max-width: 100%;
+		display: none;
+	}
+	
+	img.j2photo {
+		max-width: 50%;
+	}
+        img.j3photo {
+                 max-width: 100%;
+        }
+	div.jmpost {
+		max-width:75%; 
+		margin: auto;
+	}
+	article.hentry.type-post.status-publish {width:70%;}
+
+/*--
+*-----CB TABLES FOR SMALL DEVICES----
+*/
+
+      table.t1canadianCBD {
+                margin: 0;
+                width: auto;
+                float: none; 
+                padding: 0; 
+		}
+        #access {
+                margin: 0;
+                width: auto;
+                padding: 0;
+                border: 0;
+        }
+
+        #page #content #main {
+			width: auto;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			float: none;
+        }  
+}  
+
+/*                                                                         */
+/*-------------------RESPONSIVE ISSUANCE TABLES----------------------------*/
+/*                                                                         */
+
+@media only screen and (max-width: 481px) and (min-width: 375px) and (orientation: portrait) {
+	body {
+		width: auto;
+		Max-width: 100%;
+	}
+	#main #content { margin:0 }
+	
+	.home-box {
+		width: 100%;
+		max-width: none;
+	}
+	
+    .home-container {
+	    display: flex;
+	    flex-wrap: nowrap;
+ 	    -webkit-flex: 1;
+	    -moz-flex: 1;
+	    -ms-flex: 1;
+    }
+	
+  h1.t1USDCB {
+	font-size: 18px; 
+	text-align:left; 
+	font-weight: bold;
+  }
+ /* adjust Twitter widget  */
+/*	div.twitter-container {      
+		width: 39%;
+		max-width: 110px;
+	}
+*/	
+	.Fcontainer {
+		max-width: 56%;
+	}  
+	
+  p.jmsorter {display: none;}
+	
+	div.jmpost { max-width: 100%;}
+	article.hentry.type-post.status-publish {width:100%;}
+	.singular.entry-header { width: 100%;}
+	
+  table.t1CanadianCBD.aggregateCB { 
+	  border: 0; 
+	  width: 75%;
+	}
+
+ table.t1CanadianCBD.annualCB { 
+	  border: 0; 
+	  width: 100%;
+	}
+
+  table.t1CanadianCBD caption { font-size: 1.4em; }
+  
+  table.t1CanadianCBD thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table.t1CanadianCBD tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table.t1CanadianCBD td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .7em;
+    text-align: left!important;
+	position:relative;
+	padding-left: 20%;
+	width: 70% ;
+	}
+  
+  table.t1CanadianCBD td::before {
+    content: attr(data-label);
+ 	position: absolute;
+		/* Top/left values mimic padding */
+	top: 6px;
+	left: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table.t1CanadianCBD td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 482px) and (orientation: landscape)
+    {
+	body {
+		width: 768px ;
+	}  
+	.home-box {
+		width: 100%;
+		max-width: none;
+	}
+			
+		#main #content { margin:0 }
+		
+    .home-container {
+	    display: flex;
+	    flex-wrap: nowrap;
+	    -webkit-flex: 1;
+	    -moz-flex: 1;
+	    -ms-flex: 1;
+    }
+
+  h1.t1USDCB {
+	font-size: 18px; 
+	text-align:left; 
+	font-weight: bold;
+  }
+	div.twitter-container {       /* adjust Twitter widget  */
+		width: 27%;
+		max-width: 110px;
+		background-color: green;
+	}
+	div.Fcontainer {              /* make room for Twitter widget   */
+		width: 90%;
+		max-width: 70%;
+	}
+	div.jmpost {max-width: 100%;}
+	article.hentry.type-post.status-publish {width:100%;}
+	
+
+/*                                                                         */
+/*-------------------RESPONSIVE NAVIGATION MENU----------------------------*/
+/*                                                                         */
+    .menu.li.menu-item-type-post_type::first-child { 
+	width: 30%;
+    float: left;
+    display: flex;
+}
+@media screen and (max-width: 375px ) 
+     {.menu.li.menu-item-type-post_type::first-child { width: 25%; }}
+@media screen and (max-width: 481px ) and (min-width:375px) 
+     {.menu.li.menu-item-type-post_type::first-child { width: 100%; }}
+@media screen and (max-width: 768px ) and (min-width:481px) 
+     {.menu.li.menu-item-type-post_type::first-child { width: 15%; }}
+@media screen and (max-width: 1024px ) and (min-width:768px) 
+     {.menu.li.menu-item-type-post_type::first-child { width: 10%; }} 
+
+/*! ---END RESPONSIVE ADJUSTMENTS----*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------------FLUID IFRAMES------------------------------*/
+/*----------------------------------------------------------------------*/
+.fluidMedia {
+    position: relative;
+    padding-bottom: 125%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+                          /* I used 8:10 (10/8 = 1.25 or 125% for vertical PDF  */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.fluidMedia iframe {
+    position: absolute;
+    display: block;       /* iframes are inline by default */
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+/*! ------END FLUID FRAMES-------*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT PRINT OUTPUT------------------------------*/
+/*----------------------------------------------------------------------*/
+
+@media only print {
+ 	#site-title  {
+		margin: 0 0 0 0;   /*--FIX MARGINS FOR SITE-TITLE--*/
+		width: 80%;        /*--REDUCE THE WIDTH---*/
+	} 
+	#site-description {
+		margin: 0 0 0 0;   /*--FIX MARGINS FOR SITE-DESCRIPTION--*/
+		width: 80%;        /*--REDUCE THE WIDTH---*/
+	}
+	#access {
+		display: none;  /*--DO NOT PRINT MENUS---------*/
+	}
+	#main {
+		font-size: x-small;
+		margin: 0 0 0 0 !important;
+	}
+}
+/*! ---END FORMAT PRINT OUTPUT----*/
+
+/*------------------------------------------------------------------------*/
+/*---------------------------SMASH BALLOON--------------------------------*/
+/*------------------------------------------------------------------------*/
+
+#ctf .ctf-author-box {
+	margin-bottom: 10px;
+	width:100%;
+	float: none!important;
+	clear: both;
+	display:block;
+}
+#cft.ctf-super-narrow .ctf-tweet-content {
+	clear: both;
+	float: none !important;
+}
+#ctf .ctf-tc-image { 
+	float: left; 
+	overflow: hidden; 
+	aspect-ratio: 16/9;
+	width: 50%;
+	height: auto; 
+}
+#ctf .ctf-author-box-link {
+	display: block !important;
+}
