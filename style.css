@@ -964,7 +964,8 @@ p.post-nav-links {
 	font-size: 200%;
 }
 div.jmpost {
-	max-width:auto;
+	width: 750px;
+	margin: 0 auto;
 }
 div.jmpost p {font-family: georgia; font-size: 110%; text-align: justify;}
 
