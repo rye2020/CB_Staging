@@ -1,15 +1,15 @@
 <?php
 /**
- * Header template for New Front page
+ * DefULT Header template
  *
  * Displays all of the <head> section and everything up till <div id="main">.
- *
- * JRM Updated to add specific menus to certain pages (2/26/2015)
- *
+ * *
  * @Author JMarlatt
  * @package WordPress
- * @subpackage Twenty_Eleven_Child
- * @since Twenty Eleven_Child 1.0
+ * @subpackage Twentytwentyone_Child
+ * @since Twenty TwentyOne_Child 1.0
+ * 
+ * v. 1.0 30 July 2026
  */
 ?><!DOCTYPE html>
 <!--[if IE 6]>
