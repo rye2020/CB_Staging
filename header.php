@@ -58,6 +58,7 @@ $pagename = $wp_query->queried_object->post_name;
 	}
 	else {  
 	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/style.css?ver=1.0.0" media="all"> ';
+	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/css/allpages.css?ver=1.0.0" media="all"> ';
 	 } 
 ?>
 <!--JRM - include sort table code -->
