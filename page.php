@@ -15,7 +15,7 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header("home"); ?>
+get_header(); ?>
 
 <div id="primary">
 	<div id="content" role="main">
