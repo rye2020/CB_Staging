@@ -51,7 +51,7 @@
 <?php
 global $wp_query;
 $pagename = $wp_query->queried_object->post_name;
-	if ( strpos ( $pagename, "t21") == !false ) {
+	if ( strpos ( $pagename, "t21") !== false ) {
 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
 		return;
@@ -77,8 +77,8 @@ $pagename = $wp_query->queried_object->post_name;
 	wp_head();
 
 	?>
-			// Added for Claude.ai for debugging Jan 2026
-		    <!-- <style type="text/css">
+		<!-- // Added for Claude.ai for debugging Jan 2026
+		    <style type="text/css">
     .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
         display: inline-block !important;
         width: 23.5% !important;
