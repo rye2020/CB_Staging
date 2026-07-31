@@ -15,14 +15,14 @@
 /*----------------------------------------------------------------------*/
 
 /* control spacing between #branding and #main  */
-#site-title {
+#site-title a {
 	padding: 0;
 	margin: 0 0 0 -9%;
 	color: blue !important;
 	/* Adjust Site Title  */
 }
 
-#site-description {
+#site-description a {
 	margin: 0 0 0 -9%;
 	color: blue !important;
 	/* Adjust Site Description */
