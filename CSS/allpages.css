@@ -19,18 +19,20 @@
 	padding: 0;
 	margin: 0 auto;
 	color: blue !important;
+	text-align: center:
 	/* Adjust Site Title  */
 }
 
 #site-description {
 	margin: 0 0 0 -9%;
 	color: blue !important;
+	text-align: center;
 	/* Adjust Site Description */
 	/*color :red !important;         MERRY CHRISTMAS*/
 	/*font-size: 200%;               MERRY CHRISTMAS*/
 }
 
-#branding #searchform {
+#branding .searchform {
 	top: 1.8em;
 	test-align: right;
 }
