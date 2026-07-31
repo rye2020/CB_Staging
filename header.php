@@ -1,14 +1,13 @@
 <?php
 /**
- * DefULT Header template
+ * Default Header template
  *
  * Displays all of the <head> section and everything up till <div id="main">.
  * *
  * @Author JMarlatt
  * @package WordPress
- * @subpackage Twentytwentyone_Child
- * @since Twenty TwentyOne_Child 1.0
- * 
+ * @subpackage Twenty_Twenty_One_Child
+ * @since Twenty Twenty_One_Child 1.0
  * @version v.1.0 30 July 2026
  */
 ?><!DOCTYPE html>
@@ -53,10 +52,9 @@
 global $wp_query;
 $pagename = $wp_query->queried_object->post_name;
 	if (strpos($pagename, "t21") == 0) {
-	// echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
-	//echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
-	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/style.css?ver=1.0.0" media="all"> ';
-	return;
+	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
+	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
+		return;
 	}
 	else {  
 	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/style.css?ver=1.0.0" media="all"> ';
@@ -65,6 +63,7 @@ $pagename = $wp_query->queried_object->post_name;
 <!--JRM - include sort table code -->
 <script src="/wp-includes/js/sorttable.js" type="text/javascript"></script> 
 <meta http-equiv="X-Frame-Options" content="sameorigin"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> <!--JM 3/20-->
 <!--JRM - include jQuery code  -->	
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <?php
@@ -78,7 +77,7 @@ $pagename = $wp_query->queried_object->post_name;
 
 	?>
 			// Added for Claude.ai for debugging Jan 2026
-		    <style type="text/css">
+		    <!-- <style type="text/css">
     .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
         display: inline-block !important;
         width: 23.5% !important;
@@ -88,7 +87,7 @@ $pagename = $wp_query->queried_object->post_name;
     .wp-block-gallery.columns-4.is-layout-flex {
         display: block !important;
     }
-    </style>
+    </style> -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -99,12 +98,13 @@ $pagename = $wp_query->queried_object->post_name;
                 <!-- <h2><scan style="color: blue; font-family: 'Georgia'; font-variant: small-caps; font-size: 80%; font-weight: bold; margin: 0 0 0.625% 0; padding:0; border:0; line-height:70%">Follow us on <a href="www.twitter.com/uscoveredbonds" target="_blank">@UScoveredbonds</a></scan></h2> -->
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
-
 			
 				<?php get_search_form(); ?>
 			<nav id="access" role="navigation">
-				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
+
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				<hr style="clear: both; background-color:white; height: 2px; margin: 0;" />
+
                     
 			</nav><!-- #access -->
 
