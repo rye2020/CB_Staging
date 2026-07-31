@@ -9,7 +9,7 @@
  * @subpackage Twentytwentyone_Child
  * @since Twenty TwentyOne_Child 1.0
  * 
- * v. 1.0 30 July 2026
+ * @version v.1.0 30 July 2026
  */
 ?><!DOCTYPE html>
 <!--[if IE 6]>
