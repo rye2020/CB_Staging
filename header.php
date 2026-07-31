@@ -51,6 +51,7 @@
 <?php
 global $wp_query;
 $pagename = $wp_query->queried_object->post_name;
+	echo '<p> Pagename= '. $pagename ."</p>";  /////////////////////TEST JRM
 	if (strpos($pagename, "t21") == 0) {
 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
