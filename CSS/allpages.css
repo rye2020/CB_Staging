@@ -18,11 +18,13 @@
 #site-title {
 	padding: 0;
 	margin: 0 0 0 -9%;
+	color: blue;
 	/* Adjust Site Title  */
 }
 
 #site-description {
 	margin: 0 0 0 -9%;
+	color: blue;
 	/* Adjust Site Description */
 	/*color :red !important;         MERRY CHRISTMAS*/
 	/*font-size: 200%;               MERRY CHRISTMAS*/
@@ -30,6 +32,7 @@
 
 #branding #searchform {
 	top: 1.8em;
+	align: right;
 }
 
 /* chatGPT to fix menu boxes
@@ -69,7 +72,7 @@ body {
 }
 
 #content {
-	margin: 0 34% 0 3.8%;
+	margin: auto 0 auto;
 	width: 63.5%;
 }
 
