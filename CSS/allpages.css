@@ -96,6 +96,7 @@ footer {
 	clear: both !important;
 	text-align: center !important;
 	font: bold 10px Georgia !important;
+	bottom: 1em;
 }
 
 article.intro {
