@@ -92,14 +92,9 @@ body {
 	background: white;
 }
 
-#colophon .site-footer {
+footer {
 	clear: both;
 	text-align: center;
-}
-
-.entry-footer {
-	clear: both;
-	text-align: center:
 }
 
 article.intro {
