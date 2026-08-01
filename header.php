@@ -102,11 +102,7 @@ $pagename = $wp_query->queried_object->post_name;
 			
 				<?php get_search_form(); ?>
 			<nav id="access" role="navigation">
-
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-				<hr style="clear: both; background-color:white; height: 2px; margin: 0;" />
-
-                    
 			</nav><!-- #access -->
 
 	</header><!-- #branding JM -->
