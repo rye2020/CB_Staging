@@ -66,6 +66,8 @@ body {
 	width: 100%;
 	max-width: 100%;
 	background-color: white !important;
+	align-items: center;
+	margin: auto;
 }
 
 #main {
