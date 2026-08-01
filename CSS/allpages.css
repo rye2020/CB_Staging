@@ -34,7 +34,7 @@
 }
 
 #branding  {
-	margin: 0 5px;
+	margin: 0 0;
 	text-align: center !important;
 }
 
@@ -64,7 +64,7 @@ body {
 
 #page {
 	width: 100%;
-	max-width: 1920px;
+	max-width: 100%;
 	background-color: white !important;
 }
 
