@@ -19,7 +19,8 @@
 	padding: 0;
 	margin: 0 auto;
 	color: blue !important;
-	text-align: center:
+	text-align: center !important;
+
 	/* Adjust Site Title  */
 }
 
@@ -60,6 +61,7 @@ body {
 #page {
 	width: 100%;
 	max-width: 1920px;
+	background-color: white;
 }
 
 #branding {
