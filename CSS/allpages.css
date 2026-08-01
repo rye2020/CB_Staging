@@ -89,6 +89,11 @@ body {
 	background: white;
 }
 
+#colophon {
+	clear: both;
+	text-align: center;
+}
+
 article.intro {
 	display: none;
 	/* delete unnecessary extra vertical space */
@@ -145,6 +150,22 @@ nav#access {
 /*  REDUCE PADDING RIGHT  FROM 1.2125em -->  0.500em*/
 #access a {
 	Padding: 0 .500em;
+}
+
+ul.menu { 
+	display: flex;
+}
+.menu ul li {color:white;}
+.wp-block-gallery.columns-4.is-layout-flex {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5em !important;
+}
+
+.wp-block-gallery.columns-4 .wp-block-image {
+    width: calc(25% - 0.375em) !important;
+    flex: 0 0 calc(25% - 0.375em) !important;
+    margin: 0 !important;
 }
 
 /*! ---END FORMAT MENUS------*/
