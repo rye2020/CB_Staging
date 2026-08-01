@@ -241,7 +241,7 @@ article.hentry.type-post.status-publish {width:750px;} */
 
 	div.jmpost {
 		max-width: 75%;
-		margin: auto;
+		text-align: center;
 	}
 
 	article.hentry.type-post.status-publish {
