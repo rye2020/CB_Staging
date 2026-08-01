@@ -95,7 +95,7 @@ body {
 footer {
 	clear: both !important;
 	text-align: center !important;
-	font: 15px Georgia, bold !important;
+	font: bold 15px Georgia !important;
 }
 
 article.intro {
