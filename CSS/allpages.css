@@ -36,7 +36,7 @@
 #branding .searchform {
 	top: 1.8em;
 	margin: 0 5px;
-	text-align: center;
+	text-align: center !important;
 }
 
 /* chatGPT to fix menu boxes
@@ -70,6 +70,10 @@ body {
 	font-size: small;
 	background-color: white;
 	margin: 0;
+}
+
+#primary {
+	background: white !important;
 }
 
 #content {
