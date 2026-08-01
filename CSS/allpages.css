@@ -89,7 +89,7 @@ body {
 	background: white;
 }
 
-#colophon {
+#colophon .site-footer .site-info {
 	clear: both;
 	text-align: center;
 }
