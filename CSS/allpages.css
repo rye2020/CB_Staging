@@ -93,8 +93,8 @@ body {
 }
 
 footer {
-	clear: both;
-	text-align: center;
+	clear: both !important;
+	text-align: center !important;
 }
 
 article.intro {
