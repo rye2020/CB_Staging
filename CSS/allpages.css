@@ -175,6 +175,43 @@ ul.menu {
     margin: 0 !important;
 }
 
+/*----------------BACKGROUND COLOR-------------*/
+
+nav#access {
+	margin: 0;
+	/* Remove the padding after the menu navigation bar */
+	background: blue;
+	/* change background color to BLUE  */
+}
+
+#access ul ul {
+	background-color: white;
+	align-content;
+}
+
+#access ul:hover > ul {
+	background-color: lightsteelblue;
+}
+
+#access ul li a:hover {          
+	background-color: lightcoral;
+	color: black !important;    /*  Force black text on parent LI */
+}
+
+#access li:hover > ul {
+	background-color: lightgreen;  /* light green bar on each 1st LI */
+	display: block;
+}
+
+#access ul li:hover {
+	background-color: lightgoldenrodyellow ;  /* #e0e0e0;    */
+	/* Slightly darker grey on hover */
+}
+
+#access ul ul a:hover {
+	background-color: lightpink ;  /* each LI hovered over */
+}
+
 /*! ---END FORMAT MENUS------*/
 
 /*----------------------------------------------------------------------*/
