@@ -657,20 +657,18 @@ a.assistive-text:focus,
 /*----------------------------------------------------------------------*/
 
 /* control spacing between #branding and #main  */
-#site-title {
+/* #site-title {
 	padding: 0;
-	margin: 0 0 0 -9%;  /* Adjust Site Title  */
-}
+	margin: 0 0 0 -9%;  
+} 
 
 #site-description {
-	margin: 0 0 0 -9%;  /* Adjust Site Description */
-	/*color :red !important;         MERRY CHRISTMAS*/
-	/*font-size: 200%;               MERRY CHRISTMAS*/
+	margin: 0 0 0 -9%;  
 }
 
 #branding #searchform {
 	top: 1.8em; 
-}
+}  */
 /*! ---END FORMAT ALL HEADERS-----*/
 
 /*----------------------------------------------------------------------*/
