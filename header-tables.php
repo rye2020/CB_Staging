@@ -84,15 +84,6 @@
 
 			<nav id="access" role="navigation">
 				<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-				<hr style="clear: both; background-color:white; height: 2px; margin: 0;" />
-				<?php
-				// JRM   load the menu for tables  ////////////////////////////////////////////////
-				wp_nav_menu(array(
-					'theme_location' => 'primary',
-					'menu' => 'menu C'
-				));
-				?>
-
 			</nav><!-- #access -->
 
 		</header><!-- #branding -->
