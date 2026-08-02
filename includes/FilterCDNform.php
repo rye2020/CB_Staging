@@ -4,7 +4,7 @@
 	}
 </style>
 <aside style="font-size:small">
-	<p style="margin:0;"><strong>Select issuance filters:</strong></p>
+	<p style="margin:0; text-decoration:underline;"><strong>Data Filters:</strong></p>
 	<style scoped>
 		select {
 			float: right;
@@ -12,6 +12,11 @@
 
 		input {
 			float: right;
+		}
+		.data-filter-container {
+			display: grid;
+			gap: .25em;
+			grid-rows: 7px;
 		}
 	</style>
 	<!--<form name='CDNinterest' action='/wp-content/themes/twentyeleven-child/CDN-Form.php' method='POST'> -->
