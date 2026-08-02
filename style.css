@@ -467,7 +467,7 @@ a.assistive-text:focus,
 /* =Header
 ----------------------------------------------- */
 
-#branding {
+/*#branding {
 	border-top: 2px solid #bbb;
 	padding-bottom: 10px;
 	position: relative;
@@ -498,7 +498,7 @@ a.assistive-text:focus,
 	height: auto;
 	display: block;
 	width: 100%;
-}
+} */
 
 
 /* =Menu
