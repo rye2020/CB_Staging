@@ -37,6 +37,9 @@
 	margin: 0 0;
 	text-align: center !important;
 }
+form.search-form {
+	margin-bottom: 10px;
+}
 
 /* chatGPT to fix menu boxes
 /* Kill block navigation boxes */
@@ -123,7 +126,7 @@ button.sub-menu-toggle {
 /*----------------------------------------------------------------------*/
 
 nav#access {
-	margin: 5px 0 0 0;
+	margin: 0;
 	/* Remove the padding after the menu navigation bar */
 	background: blue
 		/*hsla(240,50%,60%,0.8)*/;  /* change background color to BLUE  */
