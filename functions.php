@@ -446,7 +446,7 @@ function pagination_nav($jmarg)
  *  Manage style sheets for different pages **************************************
  */
 // Load page specific CSS files
-add_action('wp_enqueue_scripts', 'jm_load_page_css', 1);
+/* add_action('wp_enqueue_scripts', 'jm_load_page_css', 1);
 function jm_load_page_css()
 {
 // Load for every page
@@ -534,7 +534,7 @@ add_filter('twenty_twenty_one_show_submenu_indicators', '__return_false');
 //  Deregister the SideBar so we do not get it on every page
 add_action('widgets_init', function () {
     unregister_sidebar('sidebar-1');
-}, 11);
+}, 11); */
 
 // For relative addressing for forms and template loads
 add_action('admin_post_nopriv_cdn_interest_form', 'handle_cdn_interest_form');
