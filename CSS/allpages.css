@@ -194,7 +194,7 @@ nav#access {
 }
 
 #access ul li a:hover {          
-	background-color: lightcoral;
+	background-color: lightcoral  !important;
 	color: black !important;    /*  Force black text on parent LI */
 }
 
