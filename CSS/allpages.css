@@ -97,6 +97,10 @@ body {
 	background: white;
 }
 
+.jmpost {
+	clear: left;
+}
+
 footer {
 	clear: both !important;
 	text-align: center !important;
@@ -127,9 +131,8 @@ button.sub-menu-toggle {
 
 nav#access {
 	margin: 0 0 10px 0;
-	/* Remove the padding after the menu navigation bar */
-	background: blue
-		/*hsla(240,50%,60%,0.8)*/;  /* change background color to BLUE  */
+	background: blue;
+		/*hsla(240,50%,60%,0.8)*/  /* change background color to BLUE  */
 	display: block;
 }
 
@@ -351,12 +354,6 @@ article.hentry.type-post.status-publish {width:750px;} */
 		font-weight: bold;
 	}
 
-	/* adjust Twitter widget  */
-	/*	div.twitter-container {      
-		width: 39%;
-		max-width: 110px;
-	}
-*/
 	.Fcontainer {
 		max-width: 56%;
 	}
@@ -478,7 +475,6 @@ article.hentry.type-post.status-publish {width:750px;} */
 
 	div.jmpost {
 		max-width: 100%;
-		clear: left;
 	}
 
 	article.hentry.type-post.status-publish {
