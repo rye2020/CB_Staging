@@ -17,7 +17,7 @@
 /* control spacing between #branding and #main  */
 #site-title a {
 	padding: 0;
-	margin: 0 auto;
+	margin: 0 !important;
 	color: blue !important;
 	text-align: center !important;
 
