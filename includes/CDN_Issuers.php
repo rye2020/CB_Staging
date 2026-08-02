@@ -1,5 +1,5 @@
 <label for='issuerinterest'>Issuer</label>
-<select name='issuerinterest' style="width:60%;">
+<select name='issuerselect' style="width:60%;">
 <option value=''> </option>
 <option value='Bank of Montreal'>Bank of Montreal</option>
 <option value='Bank of Nova Scotia'>Bank of Nova Scotia</option>
@@ -11,7 +11,7 @@
 <option value='National Bank of Canada'>National Bank of Canada</option>
 <option value='Royal Bank of Canada'>Royal Bank of Canada</option>
 <option value='Toronto-Dominion Bank'>Toronto-Dominion Bank</option>
-</select>
-<br />
+</select></div>
+
 
 

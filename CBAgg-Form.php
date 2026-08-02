@@ -40,7 +40,7 @@ if (isset($_POST['SubmitAGG'])) {
 	$file = $_POST['file'];
 	$filepath = $_POST['filepath'];
 
-	$issuer = $_POST['issuerinterest'];
+	$issuer = $_POST['issuerselect'];
 	if ($issuer !== "") {
 		$like = $like . "Issuer LIKE '%" . $issuer . "%'";
 		$title = $title . "Issuer ";

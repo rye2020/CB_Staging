@@ -721,6 +721,7 @@ article.j1 {
 /*--------------------------FORMAT HOME PAGE----------------------------*/
 /*----------------------------------------------------------------------*/
 
+/*
 .Fcontainer {
 	border-style:  solid;
     border-color: white green green white;
@@ -728,18 +729,18 @@ article.j1 {
 	}
 
 .Fcontainer p {
-	margin:0 0 5px 0;  /* no spacing around paragraphs */
+	margin:0 0 5px 0;  
 }
 
 .Fcontainer ul {
 	display: block;
 	list-style-type: disc;
-        margin: 0 0 0 1; /*  more compact listing */ 
+    margin: 0 0 0 1; 
 	padding: 0px;
 }
 
 .Fcontainer ul li {
-	padding: 0px;  /*  more compact listing */
+	padding: 0px;  
 }
 
 .Fhspace {
@@ -780,9 +781,9 @@ article.j1 {
 
 	.j1col4 {
 		-webkit-column-gap: 20px;
-		/* Chrome, Safari, Opera */
+	
 		-moz-column-gap: 20px;
-		/* Firefox */
+	
 		column-gap: 20px;
 	}
 
@@ -806,6 +807,7 @@ article.j1 {
 		object-position: center 50%;
 		margin: -3px 0 0 0;
 	}
+*/
 
 /*---------------------------------------------------------------------------------*/
 /*-----------------------------CANADIAN ISSUERS/HOME PAGE--------------------------*/
