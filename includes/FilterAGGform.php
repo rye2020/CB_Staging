@@ -10,7 +10,7 @@ div#secondary {
 		float: right;
 	}
 	input {
-		float: left;
+		float: right;
 	}
 			.data-filter-container {
 			display: grid;
