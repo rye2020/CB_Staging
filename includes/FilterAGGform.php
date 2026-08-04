@@ -5,14 +5,19 @@ div#secondary {
 </style>
 <aside style="font-size:small;">
 <p style="margin:0;"><strong>Select issuance filters:</strong></p>
-<!--<style scoped>
+<style scoped>
 	select {
 		float: right;
 	}
 	input {
 		float: left;
 	}
-	</style>-->
+			.data-filter-container {
+			display: grid;
+			gap: .25em;
+			grid-rows: 7px;
+		}
+	</style>
 	
 
 <form name='AGGinterest' action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method='POST'>
