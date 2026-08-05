@@ -228,6 +228,10 @@ nav#access {
 /*---------------------FORMAT PAGE NAME AND SPACING---------------------*/
 /*----------------------------------------------------------------------*/
 
+#main {
+	padding-top: 5em !important;
+}
+
 /*
 *----------kill display of .entry-title [PAGE NAME] and spacing
 *              because we will use DEFAULT TEMPLATE to avoid RECENT POSTS  at bottom
