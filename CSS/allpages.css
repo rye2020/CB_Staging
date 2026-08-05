@@ -78,7 +78,7 @@ body {
 }
 
 #main {
-	padding-top: 0.25em;
+	padding-top: 5em;
 	font-size: small;
 	background-color: white;
 	margin: 0;
@@ -228,9 +228,6 @@ nav#access {
 /*---------------------FORMAT PAGE NAME AND SPACING---------------------*/
 /*----------------------------------------------------------------------*/
 
-#main {
-	padding-top: 5em !important;
-}
 
 /*
 *----------kill display of .entry-title [PAGE NAME] and spacing
