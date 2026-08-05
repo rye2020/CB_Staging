@@ -4,7 +4,7 @@ div#secondary {
 	}
 </style>
 <aside style="font-size:small;">
-<p style="margin:0; text-decoration: underline;"><strong>Data Filters:</strong></p>
+<p style="margin:0; text-align:left; text-decoration: underline;"><strong>Data Filters:</strong></p>
 <style scoped>
 	select {
 		float: right;
@@ -12,11 +12,11 @@ div#secondary {
 	input {
 		float: right;
 	}
-			.data-filter-container {
-			display: grid;
-			gap: .25em;
-			grid-rows: 7px;
-		}
+	.data-filter-container {
+		display: grid;
+		gap: .25em;
+		grid-rows: 7px;
+	}
 	</style>
 	
 
