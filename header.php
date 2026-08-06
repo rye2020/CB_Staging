@@ -51,16 +51,16 @@
 <?php
 global $wp_query;
 $pagename = $wp_query->queried_object->post_name;
-	if ( strpos ( $pagename, "t21") !== false ) {
-	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
-	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
-		return;
-	}
-	else {  
-	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/style.css" media="all"> ';
-	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/css/allpages.css" media="all"> ';
-	 } 
-?>
+// 	if ( strpos ( $pagename, "t21") !== false ) {
+// 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
+// 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
+// 		return;
+// 	}
+// 	else {  
+// 	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/style.css" media="all"> ';
+// 	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/css/allpages.css" media="all"> ';
+// 	 } 
+// ?>
 <!--JRM - include sort table code -->
 <script src="/wp-includes/js/sorttable.js" type="text/javascript"></script> 
 <meta http-equiv="X-Frame-Options" content="sameorigin"> 
