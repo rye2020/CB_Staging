@@ -78,7 +78,7 @@ body {
 }
 
 #main {
-	padding-top: 5em;
+	padding-top: 5em !important;
 	font-size: small;
 	background-color: white;
 	margin: 0;

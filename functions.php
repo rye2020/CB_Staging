@@ -451,7 +451,7 @@ function jm_load_page_css()
 {
 // Load for every page
     wp_enqueue_style('AllPages', get_stylesheet_directory_uri() . '/CSS/allpages.css');
-    wp_enqueue_style('Style', get_stylesheet_directory_uri() . '/style.css');
+    wp_enqueue_style('Style', get_stylesheet_directory_uri() . '/style.css'); 
 
 
 
