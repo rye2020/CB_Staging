@@ -336,7 +336,7 @@ function start_session()
 }               /*  DELETE IF NOT NEEDED                         
 
 /**
- *  Manage style sheets for different pages **************************************
+ *  Manage style sheets for different pages **************************************  
  */
 // Load page specific CSS files
 add_action('wp_enqueue_scripts', 'jm_load_page_css', 1);
