@@ -482,15 +482,15 @@ function handle_agg_interest_form()
 }
 
 // for Claude.ai debugging Jan 2026 for block editor
-//function custom_gallery_css()
-// {
-//     echo '<style type="text/css">
-//     .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
-//         display: inline-block !important;
-//         width: 23.5% !important;
-//         margin: 0.5% !important;
-//         vertical-align: top !important;
-//     }
-//     </style>';
-// }
-// add_action('wp_head', 'custom_gallery_css');
+function custom_gallery_css()
+{
+    echo '<style type="text/css">
+    .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
+        display: inline-block !important;
+        width: 23.5% !important;
+        margin: 0.5% !important;
+        vertical-align: top !important;
+    }
+    </style>';
+}
+add_action('wp_head', 'custom_gallery_css');
