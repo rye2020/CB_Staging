@@ -346,7 +346,7 @@ function jm_load_page_css()
     wp_enqueue_style('Style', get_stylesheet_directory_uri() . '/style.css');
     wp_enqueue_style('AllPages', get_stylesheet_directory_uri() . '/CSS/allpages.css');
 
-/*--------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------*/
     // HEADER: tables
     if (!empty($GLOBALS['header_tables_loaded'])) {
 
@@ -355,7 +355,7 @@ function jm_load_page_css()
         unset($GLOBALS['header_tables_loaded']);
         return;
     }
-/*--------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------*/
     // HEADER: legisl
     if (!empty($GLOBALS['header_legisl_loaded'])) {
 
@@ -365,7 +365,7 @@ function jm_load_page_css()
         unset($GLOBALS['header_legisl_loaded']);
         return;
     }
-/*--------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------*/
     // HEADER: misc
     if (!empty($GLOBALS['header_misc_loaded'])) {
 
@@ -374,7 +374,7 @@ function jm_load_page_css()
         unset($GLOBALS['header_misc_loaded']);
         return;
     }
-/*--------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------*/
     // HEADER: cbdocs
     if (!empty($GLOBALS['header_cbdocs_loaded'])) {
 
@@ -383,7 +383,7 @@ function jm_load_page_css()
         unset($GLOBALS['header_cbdocs_loaded']);
         return;
     }
-/*-------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------*/
     // HEADER: home (THIS is where child-style is needed)
     if (!empty($GLOBALS['header_home_loaded'])) {
 
@@ -393,12 +393,12 @@ function jm_load_page_css()
             ['wp-block-library'],
             wp_get_theme()->get('Version')
         );
-/*-------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------*/
         unset($GLOBALS['header_home_loaded']);
         return;
     }
 }
-/*-------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------*/
 // Dequeue the parent styles
 add_action('wp_enqueue_scripts', function () {
         wp_dequeue_style('twenty-twenty-one-style');
@@ -409,7 +409,7 @@ add_action('wp_enqueue_scripts', function () {
         wp_deregister_style('wp-block-library-theme');
     
 }, 20);
-/*-------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------*/
 add_action('wp_enqueue_scripts', function () {
 
     // Required for Twenty Twenty-One nav toggles
@@ -419,15 +419,15 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('wp-block-library');
 
 }, 5);
-/*------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------*/
 // Disable submenu toggles in Twenty Twenty-One
 add_filter('twenty_twenty_one_show_submenu_indicators', '__return_false');
-/*------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------*/
 //  Deregister the SideBar so we do not get it on every page
 add_action('widgets_init', function () {
     unregister_sidebar('sidebar-1');
 }, 11); 
-/*------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------*/
 // For relative addressing for forms and template loads
 add_action('admin_post_nopriv_cdn_interest_form', 'handle_cdn_interest_form');
 add_action('admin_post_cdn_interest_form', 'handle_cdn_interest_form');
@@ -439,7 +439,7 @@ add_action('admin_post_agg_interest_form', 'handle_agg_interest_form');
 *
 *
 *
-*
+*****************************************************************************************/
 function handle_cdn_interest_form()
 {
     // Optional safety check
