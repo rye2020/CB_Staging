@@ -96,7 +96,7 @@ $pagename = $wp_query->queried_object->post_name;
 	<header id="branding" role="banner">
 			<hgroup>
 				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-                <h2><scan style="color: blue; font-family: 'Georgia'; font-variant: small-caps; font-size: 80%; font-weight: bold; margin: 0 0 0.625% 0; padding:0; border:0; line-height:70%">Follow us on <a href="www.twitter.com/uscoveredbonds" target="_blank">@UScoveredbonds</a></scan></h2> -->
+                <!--<h2><scan style="color: blue; font-family: 'Georgia'; font-variant: small-caps; font-size: 80%; font-weight: bold; margin: 0 0 0.625% 0; padding:0; border:0; line-height:70%">Follow us on <a href="www.twitter.com/uscoveredbonds" target="_blank">@UScoveredbonds</a></scan></h2> -->
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			
