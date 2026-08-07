@@ -409,7 +409,14 @@ add_action('widgets_init', function () {
     unregister_sidebar('sidebar-1');
 }, 11); 
 /*------------------------------------------------------------------------------------*/
-// For relative addressing for forms and template loads
+/***
+ *=======================================================================================
+ ****************************************************************************************
+ *=======================================================================================
+ *   For relative addressing for forms and template loads
+ *
+ *---------------------------------------------------------------------------------------
+ */
 add_action('admin_post_nopriv_cdn_interest_form', 'handle_cdn_interest_form');
 add_action('admin_post_cdn_interest_form', 'handle_cdn_interest_form');
 add_action('admin_post_nopriv_usd_interest_form', 'handle_usd_interest_form');
