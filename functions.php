@@ -366,14 +366,14 @@ function jm_load_page_css() {
     }
 /*-------------------------------------------------------------------------------------*/
     // HEADER: home (THIS is where child-style is needed)
-    // if (!empty($GLOBALS['header_home_loaded'])) {
+    if (!empty($GLOBALS['header_home_loaded'])) {
 
-    //     wp_enqueue_style(
-    //         'child-style',
-    //         get_stylesheet_uri(),
-    //         ['wp-block-library'],
-    //         wp_get_theme()->get('Version')
-    //     );
+        wp_enqueue_style(
+            'child-style',
+            get_stylesheet_uri(),
+            ['wp-block-library'],
+            wp_get_theme()->get('Version')
+        );
 /*-------------------------------------------------------------------------------------*/
         unset($GLOBALS['header_home_loaded']);
         return;
