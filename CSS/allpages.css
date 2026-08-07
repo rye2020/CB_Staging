@@ -17,20 +17,20 @@
 /* control spacing between #branding and #main  */
 #site-title a {
 	padding: 0;
-	margin: 0 !important;
-	color: blue !important;
-	text-align: center !important;
+	margin: 0;
+	color: blue;
+	text-align: center;
 
 	/* Adjust Site Title  */
 }
 
 h1#site-title {
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 }
 
 #site-description {
 	margin: 0 0 0 0;
-	color: blue !important;
+	color: blue;
 	text-align: center;
 	/* Adjust Site Description */
 	/*color :red !important;         MERRY CHRISTMAS*/
@@ -38,8 +38,8 @@ h1#site-title {
 }
 
 #branding  {
-	margin: 0 0 0 0 !important;
-	text-align: center !important;
+	margin: 0 0 0 0;
+	text-align: center;
 }
 form.search-form {
 	margin-bottom: 5px;
