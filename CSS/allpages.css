@@ -43,6 +43,7 @@ h1#site-title {
 }
 form.search-form {
 	margin-bottom: 5px;
+	text-align: right;
 }
 
 /* chatGPT to fix menu boxes
