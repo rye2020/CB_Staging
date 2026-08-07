@@ -1,6 +1,12 @@
 <?php
 /*
- * Twenty Twenty-One-Child functions and definitions
+ * @package WordPress
+ * @subpackage Twenty_Eleven-Child
+ * @author Jerry Marlatt
+ * Version 2.0 Jan 29,2020
+ * Version 2.1 Mar 29, 2021
+ */
+/***Twenty Twenty-One-Child functions and definitions
  *
  * Sets up the theme and provides some helper functions. Some helper functions
  * are used in the theme as custom template tags. Others are attached to action and
@@ -34,7 +40,6 @@
  * Functions contained in this file are:
  *
  *    1.  jrm_get_pagename()
- *    2.  add_my_post_tyype_to_query()
  *    3.  jrm_get_table()
  *    4.  jrm_record_inquiry()
  *    5.  get_the_user_ip()
@@ -43,13 +48,6 @@
  *    8.  function start_session()
  *    9.  function end_session()
  *-------------------------------------------------------------------------------------------------
- * @package WordPress
- * @subpackage Twenty_Eleven-Child
- * @author Jerry Marlatt
- * Version 2.0 Jan 29,2020
- * Version 2.1 Mar 29, 2021
- */
-/***
  *=======================================================================================
  ****************************************************************************************
  *=======================================================================================
@@ -71,26 +69,6 @@ function jrm_get_pagename()
     return $jrm_pagename;
 }
 
-
-/****
- *=======================================================================================
- ****************************************************************************************
- *=======================================================================================
- *   function add_my_post_types_to_query
- *
- * 
- *---------------------------------------------------------------------------------------
- */
-// Show posts of 'post', 'page' and 'movie' post types on home page
-add_action('pre_get_posts', 'add_my_post_types_to_query');
-
-function add_my_post_types_to_query($query)
-{
-    if (is_home() && $query->is_main_query())
-        $query->set('post_type', array('post', '**', 'movie'));  //add PAGE or not
-    return $query;
-}
-
 /***
  *=======================================================================================
  ****************************************************************************************
@@ -103,10 +81,10 @@ function add_my_post_types_to_query($query)
  *  We will also record the identity of the requestor in the CB_Inquiry table.
  *
  *  Parameters are:
- *           $table = table_name
- *           $like = ""|[WHERE 'column' LIKE %canada%]
- *           $sum = yes|no for total issuance row
- *           $col = column # for summing up total issuance
+ *       $table = table_name
+ *       $like = ""|[WHERE 'column' LIKE %canada%]
+ *       $sum = yes|no for total issuance row
+ *       $col = column # for summing up total issuance
  *       $index = yes|NO for including the first column with the record number
  *       $orderby = ''[Date]|NONE|[string]  defaults to Date if empty
  *       $skip = column # | column to be ignored and not returned
@@ -328,20 +306,23 @@ function crawlerDetect($USER_AGENT)
 }
 
 add_action('init', 'start_session', 1);  //************************2026 ChatGPT alternative start session
-function start_session()
-{
+function start_session() {
     if (!session_id()) {
         session_start();
     }
-}               /*  DELETE IF NOT NEEDED                         
+}                      
 
-/**
- *  Manage style sheets for different pages **************************************  
+/***
+ *=======================================================================================
+ ****************************************************************************************
+ *=======================================================================================
+ *   Manage style sheets for different pages
+ *
+ *-------------------------------------------------------------------------------------
  */
 // Load page specific CSS files
 add_action('wp_enqueue_scripts', 'jm_load_page_css', 1);
-function jm_load_page_css()
-{
+function jm_load_page_css() {
 // Load for every page
     wp_enqueue_style('Style', get_stylesheet_directory_uri() . '/style.css');
     wp_enqueue_style('AllPages', get_stylesheet_directory_uri() . '/CSS/allpages.css');
@@ -385,14 +366,14 @@ function jm_load_page_css()
     }
 /*-------------------------------------------------------------------------------------*/
     // HEADER: home (THIS is where child-style is needed)
-    if (!empty($GLOBALS['header_home_loaded'])) {
+    // if (!empty($GLOBALS['header_home_loaded'])) {
 
-        wp_enqueue_style(
-            'child-style',
-            get_stylesheet_uri(),
-            ['wp-block-library'],
-            wp_get_theme()->get('Version')
-        );
+    //     wp_enqueue_style(
+    //         'child-style',
+    //         get_stylesheet_uri(),
+    //         ['wp-block-library'],
+    //         wp_get_theme()->get('Version')
+    //     );
 /*-------------------------------------------------------------------------------------*/
         unset($GLOBALS['header_home_loaded']);
         return;
@@ -502,14 +483,14 @@ function handle_agg_interest_form()
 
 // for Claude.ai debugging Jan 2026 for block editor
 function custom_gallery_css()
-{
-    echo '<style type="text/css">
-    .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
-        display: inline-block !important;
-        width: 23.5% !important;
-        margin: 0.5% !important;
-        vertical-align: top !important;
-    }
-    </style>';
-}
-add_action('wp_head', 'custom_gallery_css');
+// {
+//     echo '<style type="text/css">
+//     .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
+//         display: inline-block !important;
+//         width: 23.5% !important;
+//         margin: 0.5% !important;
+//         vertical-align: top !important;
+//     }
+//     </style>';
+// }
+// add_action('wp_head', 'custom_gallery_css');
