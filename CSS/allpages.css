@@ -233,6 +233,11 @@ div.jmpost {
 	text-align:center;
 }
 
+nav.navigation.post-navigation {
+	display:none;
+}
+
+
 /*------------------------RESPONSIVE STYLING-----------------------------*/
 
 /*----------------------------------------------------------------------*/
