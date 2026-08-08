@@ -114,11 +114,6 @@ article.j1 {
 	/* format my commentary pages since no longer part of article.intro */
 }
 
-/* TT1 submenu buttons — intentionally disabled */
-button.sub-menu-toggle {
-	display: none !important;
-}
-
 /*!---END FORMAT ALL PAGES----*/
 
 /*----------------------------------------------------------------------*/
@@ -166,25 +161,30 @@ ul.menu {
 }
 .menu ul li {color:white;}
 .wp-block-gallery.columns-4.is-layout-flex {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 0.5em !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 
 .wp-block-gallery.columns-4 .wp-block-image {
-    width: calc(25% - 0.375em) !important;
-    flex: 0 0 calc(25% - 0.375em) !important;
-    margin: 0 !important;
+    width: calc(25% - 0.375em);
+    flex: 0 0 calc(25% - 0.375em);
+    margin: 0;
 }
 
 /* chatGPT to fix menu boxes
 /* Kill block navigation boxes */
 .wp-block-navigation *,
 .wp-block-navigation-item__content {
-	background: none !important;
-	box-shadow: none !important;
-	outline: none !important;
-	border: none !important;
+	background: none;
+	box-shadow: none;
+	outline: none;
+	border: none;
+}
+
+/* TT1 submenu buttons — intentionally disabled */
+button.sub-menu-toggle {
+	display: none;
 }
 
 /*----------------BACKGROUND COLOR-------------*/
