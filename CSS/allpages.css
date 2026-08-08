@@ -234,8 +234,9 @@ header.page-header.alignwide {
 	display:none;
 }
 
-.jmpost {
+div.jmpost {
 	clear: left;
+	text-align:center;
 }
 
 /*----------------------------------------------------------------------*/
