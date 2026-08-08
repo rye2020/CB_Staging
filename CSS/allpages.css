@@ -230,6 +230,10 @@ nav#access {
 /*----------------------------FORMAT POSTS------------------------------*/
 /*----------------------------------------------------------------------*/
 
+header.page-header {
+	display:none;
+}
+
 .jmpost {
 	clear: left;
 }
@@ -243,10 +247,10 @@ nav#access {
 *----------kill display of .entry-title [PAGE NAME] and spacing
 *              because we will use DEFAULT TEMPLATE to avoid RECENT POSTS  at bottom
 */
-article[class$="hentry"] {
+/*article[class$="hentry"] {
 	display: none;
 }
-article.hentry.type-post.status-publish {width:750px;} 
+article.hentry.type-post.status-publish {width:750px;} */
 /*! ---END FORMAT PAGE NAME AND SPACING----*/
 
 
