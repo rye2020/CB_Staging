@@ -84,10 +84,7 @@ include( get_stylesheet_directory() . '/includes/FilterAGGtest.php');
                ?>
             </tbody>
          </table>
-<?php echo do_shortcode("[jpshare]"); ?>
-<?php
-get_footer();
-?>
+
       </div>
 
       <div id="jmWrap">
@@ -99,3 +96,7 @@ get_footer();
    </div>  <!-- End jmWrap-->
 </div>
 
+<?php echo do_shortcode("[jpshare]"); ?>
+<?php
+get_footer();
+?>
