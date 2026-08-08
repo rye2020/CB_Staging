@@ -4,7 +4,7 @@
 /*------------FORMAT COVERED BOND ISSUANCE TABLES-----------------------*/
 /*----------------------------------------------------------------------*/
 
-div.top {
+div#top {
 	padding-bottom: 3em;
 	display: flex;
 	justify-content: space-between;
