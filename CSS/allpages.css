@@ -74,6 +74,7 @@ body {
 	font-size: small;
 	background-color: white;
 	margin: 0;
+	place-items: center;
 }
 
 #primary {
