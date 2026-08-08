@@ -234,6 +234,21 @@ nav#access {
 	clear: left;
 }
 
+/*----------------------------------------------------------------------*/
+/*---------------------FORMAT PAGE NAME AND SPACING---------------------*/
+/*----------------------------------------------------------------------*/
+
+
+/*
+*----------kill display of .entry-title [PAGE NAME] and spacing
+*              because we will use DEFAULT TEMPLATE to avoid RECENT POSTS  at bottom
+*/
+article[class$="hentry"] {
+	display: none;
+}
+article.hentry.type-post.status-publish {width:750px;} 
+/*! ---END FORMAT PAGE NAME AND SPACING----*/
+
 
 /*------------------------RESPONSIVE STYLING-----------------------------*/
 
