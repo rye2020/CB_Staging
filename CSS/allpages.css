@@ -230,7 +230,7 @@ nav#access {
 /*----------------------------FORMAT POSTS------------------------------*/
 /*----------------------------------------------------------------------*/
 
-header.page-header {
+header.page-header.alignwide {
 	display:none;
 }
 
