@@ -4,6 +4,13 @@
 /*------------FORMAT COVERED BOND ISSUANCE TABLES-----------------------*/
 /*----------------------------------------------------------------------*/
 
+div.top {
+	padding-bottom: 3em;
+	display: flex;
+	justify-content: space-between;
+	justify-content: center;
+}
+
 div#BuildCBTable {
 	display: grid;
 	place-items: center;
@@ -107,15 +114,5 @@ table.t1CanadianCBD td:nth-child(11) {  text-align: right; } /* align type right
 /*----------------------------------------------------------------------*/
 /* ---------AGGREGATE CB TABLES WITH SELECTION FILTERS------------------*/
 /*----------------------------------------------------------------------*/
-
-/*div#top-container {
-	text-align: center; 
-}*/  /* center the two <div> on the page  */
-
-div#top {
-	display: flex;
-	justify-content: space-between;
-	justify-content: center;
-}
 
 /*! ---END FORMAT CB TABLES WITH SELECTION FILTERS-----*/
