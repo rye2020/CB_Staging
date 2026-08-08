@@ -310,7 +310,21 @@ function start_session() {
     if (!session_id()) {
         session_start();
     }
-}                      
+}   
+
+// function for pagination previous and next links
+// 
+function pagination_nav($jmarg)
+{
+
+    if ($jmarg->max_num_pages > 1) { ?>
+        <nav class="pagination" role="navigation" style="width:20%">
+            <div class="nav-previous"><?php next_posts_link('&larr; Older posts'); ?></div>
+            <div class="nav-next"><?php previous_posts_link('Newer posts &rarr;'); ?></div>
+        </nav>
+        <?php
+    }
+}
 
 /***
  *=======================================================================================
