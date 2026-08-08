@@ -37,8 +37,8 @@ h1#site-title {
 	/*font-size: 200%;               MERRY CHRISTMAS*/
 }
 
-#branding  {
-	margin: 0 0 0 0;
+#branding  hgroup {
+	margin: 0 7.6%;
 	text-align: center;
 }
 form.search-form {
