@@ -74,7 +74,7 @@ body {
 	font-size: small;
 	background-color: white;
 	margin: 0;
-	place-items: center;
+	place-items: center;   /* CENTER ALL ITEMS ON PAGE */
 }
 
 #primary {
@@ -190,13 +190,6 @@ button.sub-menu-toggle {
 
 /*----------------BACKGROUND COLOR-------------*/
 
-nav#access {
-	margin: 0;
-	/* Remove the padding after the menu navigation bar */
-	background: blue;
-	/* change background color to BLUE  */
-}
-
 #access ul ul {
 	background-color: white;
 	align-content;
@@ -239,22 +232,6 @@ div.jmpost {
 	clear: left;
 	text-align:center;
 }
-
-/*----------------------------------------------------------------------*/
-/*---------------------FORMAT PAGE NAME AND SPACING---------------------*/
-/*----------------------------------------------------------------------*/
-
-
-/*
-*----------kill display of .entry-title [PAGE NAME] and spacing
-*              because we will use DEFAULT TEMPLATE to avoid RECENT POSTS  at bottom
-*/
-/*article[class$="hentry"] {
-	display: none;
-}
-article.hentry.type-post.status-publish {width:750px;} */
-/*! ---END FORMAT PAGE NAME AND SPACING----*/
-
 
 /*------------------------RESPONSIVE STYLING-----------------------------*/
 

@@ -48,21 +48,6 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<?php
-global $wp_query;
-$pagename = $wp_query->queried_object->post_name;
-// 	if ( strpos ( $pagename, "t21") !== false ) {
-// 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/style.css?ver=1.0.0" media="all">';
-// 	echo '<link rel="stylesheet" id="parent-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone/inc/block-styles.css?ver=1.0.0" media="all">';
-// 		return;
-// 	}
-// 	else {  
-// 	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/style.css" media="all"> ';
-// 	echo '<link rel="stylesheet" id="child-style-css" href="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/css/allpages.css" media="all"> ';
-// 	 } 
-// ?>
-<!--JRM - include sort table code -->
-<script src="/wp-includes/js/sorttable.js" type="text/javascript"></script> 
 <meta http-equiv="X-Frame-Options" content="sameorigin"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> <!--JM 3/20-->
 <!--JRM - include jQuery code  -->	
@@ -77,18 +62,6 @@ $pagename = $wp_query->queried_object->post_name;
 	wp_head();
 
 	?>
-		<!-- // Added for Claude.ai for debugging Jan 2026
-		    <style type="text/css">
-    .wp-block-gallery.columns-4.is-layout-flex figure.wp-block-image {
-        display: inline-block !important;
-        width: 23.5% !important;
-        margin: 0.5% !important;
-        vertical-align: top !important;
-    }
-    .wp-block-gallery.columns-4.is-layout-flex {
-        display: block !important;
-    }
-    </style> -->
 </head>
 
 <body <?php body_class(); ?>>
