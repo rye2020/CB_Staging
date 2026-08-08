@@ -74,6 +74,9 @@ body {
 	font-size: small;
 	background-color: white;
 	margin: 0;
+	display:flex;
+	justify-content:center;
+	align-items: center;
 }
 
 #primary {
