@@ -143,6 +143,7 @@ nav#access {
 	vertical-align: middle;
 	font-weight: bold;
 	color: white;
+	width:min-content
 }
 
 #access a {
@@ -167,6 +168,7 @@ ul.menu {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
+	width:max-content
 }
 
 .wp-block-gallery.columns-4 .wp-block-image {
