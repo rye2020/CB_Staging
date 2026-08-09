@@ -238,7 +238,7 @@ ul.menu {
 
 ul.menu > li {
     position: relative;
-    display: inline-block;
+    display: none;
 }
 
 ul.menu > li > a {
@@ -250,6 +250,7 @@ ul.menu > li > a {
 
 ul.menu > li > a:hover {
     background: #444;
+	display: block;
 }
 
 /* Submenu styles (applies to all levels) */
