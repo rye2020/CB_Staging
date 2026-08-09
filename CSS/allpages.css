@@ -183,6 +183,10 @@ ul.menu {
 	display: flex;
 }
 
+.menu ul li {
+	color: white;
+}
+
 .wp-block-gallery.columns-4.is-layout-flex {
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +243,6 @@ ul.menu {
 ul.menu > li {
     position: relative;
     display: inline-block;
-	background: white;
 }
 
 ul.menu > li > a {
