@@ -176,6 +176,8 @@ nav#access {
 .nav-menu ul,
 .sub-menu,
 .dropdown-menu {
+	opacity: 1 !important;
+	z-index: 99999 !important
 }
 
 ul.menu { 
