@@ -253,7 +253,7 @@ ul.menu > li > a:hover {
 	display: block;
 }
 
-ul.menu li {
+li.menu-item {
 	display: none;
 }
 
