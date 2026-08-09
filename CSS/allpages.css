@@ -219,11 +219,11 @@ button.sub-menu-toggle {
 
 #access ul li a:hover {          
 	background-color: lightcoral;
-	color: black;    /*  Force black text on parent LI */
+	color: black;    
 }
 
 #access li:hover > ul {
-	/*background-color: lightgreen;  ***********/
+	background-color: lightsteelblue; 
 	display: block;
 }
 
