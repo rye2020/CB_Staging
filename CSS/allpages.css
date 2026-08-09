@@ -133,12 +133,12 @@ nav#access {
 }
 
 #access ul {
+	position:relative;
 	list-style: none;
 	padding-left: 0;
 	margin: 0 0 0 -0.8125em;
 	width:min-content;
 	white-space: nowrap;
-	background-color: blue; /* Changes background to solid white */
     opacity: 1 ;                 /* Forces full visibility */
     z-index: 99999;             /* Ensures it sits on top of text */
 }
