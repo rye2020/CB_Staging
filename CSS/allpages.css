@@ -145,7 +145,6 @@ nav#access {
 	height: 30px;
 	vertical-align: middle;
 	font-weight: bold;
-	color: white;
 	position: relative;
 	list-style-type:none;
 	list-style-image:none;
@@ -183,7 +182,6 @@ nav#access {
 ul.menu { 
 	display: flex;
 }
-.menu ul li {color:white;}
 
 .wp-block-gallery.columns-4.is-layout-flex {
     display: flex;
@@ -236,7 +234,6 @@ ul.menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #333;
 }
 
 ul.menu > li {
@@ -307,7 +304,7 @@ ul.submenu li ul.submenu {
 /*----------------BACKGROUND COLOR-------------*/
 
 #access ul ul {
-	background-color: white;
+	background-color: lightsteelblue;
 	align-content;
 }
 
