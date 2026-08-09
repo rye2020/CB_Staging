@@ -171,6 +171,15 @@ nav#access {
 	margin-right: -7.68%;
 }
 
+.main-navigation ul ul,
+.nav-menu ul,
+.sub-menu,
+.dropdown-menu {
+    background-color: #ffffff !important; /* Changes background to solid white */
+    opacity: 1 !important;                 /* Forces full visibility */
+    z-index: 99999 !important;             /* Ensures it sits on top of text */
+}
+
 ul.menu { 
 	display: flex;
 }
