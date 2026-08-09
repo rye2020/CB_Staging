@@ -238,7 +238,7 @@ ul.menu {
 
 ul.menu > li {
     position: relative;
-    display: none;
+    display: inline-block;
 }
 
 ul.menu > li > a {
