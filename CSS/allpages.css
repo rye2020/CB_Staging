@@ -139,8 +139,6 @@ nav#access {
 	margin: 0 0 0 -0.8125em;
 	width:min-content;
 	white-space: nowrap;
-    opacity: 1 ;                 /* Forces full visibility */
-    z-index: 99999;             /* Ensures it sits on top of text */
 }
 
 #access li {
