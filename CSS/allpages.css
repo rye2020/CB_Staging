@@ -128,10 +128,6 @@ nav#access {
 	line-height: 30px;
 }
 
-.no-wrap-menu a {
-    white-space: nowrap !important;
-}
-
 #access {
 	margin: 0;
 }
@@ -149,7 +145,6 @@ nav#access {
 	vertical-align: middle;
 	font-weight: bold;
 	color: white;
-	white-space: nowrap;
 }
 
 #access a {
@@ -170,6 +165,7 @@ ul.menu {
 	display: flex;
 }
 .menu ul li {color:white;}
+
 .wp-block-gallery.columns-4.is-layout-flex {
     display: flex;
     flex-wrap: wrap;
