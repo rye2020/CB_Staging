@@ -172,13 +172,13 @@ nav#access {
 	margin-right: -7.68%;
 }
 
-.main-navigation ul ul,
+/*.main-navigation ul ul,
 .nav-menu ul,
 .sub-menu,
 .dropdown-menu {
 	opacity: 1 !important;
 	z-index: 99999 !important
-}
+} */
 
 ul.menu { 
 	display: flex;
