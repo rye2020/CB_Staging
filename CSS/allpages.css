@@ -227,9 +227,9 @@ button.sub-menu-toggle {
 	display: block;
 }
 
-#access ul li:hover {
+/*#access ul li:hover {
 	background-color: lightgoldenrodyellow ;  
-}
+}*/
 
 #access ul ul a:hover {
 	background-color: lightpink ;  
