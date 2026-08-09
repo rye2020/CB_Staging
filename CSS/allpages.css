@@ -132,6 +132,12 @@ nav#access {
 	margin: 0;
 }
 
+#access ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 0 0 -0.8125em;
+}
+
 #access li {
 	height: 30px;
 	vertical-align: middle;
@@ -202,20 +208,6 @@ button.sub-menu-toggle {
 	float: left;
 	margin: 0 auto 6px;
 	width: 100%;
-}
-
-#access ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 3.333em;
-	left: 0;
-	width: 188px;
-	z-index: 99999;
 }
 
 /*----------------BACKGROUND COLOR-------------*/
