@@ -467,12 +467,12 @@ a.assistive-text:focus,
 /* =Menu
 -------------------------------------------------------------- */
 
-#access {
+/* #access {
 	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
+	/*background: -moz-linear-gradient(#252525, #0a0a0a);
 	background: -o-linear-gradient(#252525, #0a0a0a);
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	/*background: -webkit-linear-gradient(#252525, #0a0a0a);
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -535,10 +535,10 @@ a.assistive-text:focus,
 #access li:hover > a,
 #access a:focus {
 	background: #f9f9f9; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	/*background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
 	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	/*background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
 	color: #373737;
 }
 #access ul li:hover > ul {
@@ -552,7 +552,7 @@ a.assistive-text:focus,
 }
 
 /* Search Form */
-#branding #searchform {
+/*#branding #searchform {
 	position: absolute;
 	top: 3.8em;
 	right: 7.6%;
@@ -742,7 +742,7 @@ div.jmpost p {font-family: georgia; font-size: 110%; text-align: justify;}
 /*---------------------FORMAT CANADIAN CB DOCS--------------------------*/
 /*----------------------------------------------------------------------*/
 
-h1#cdndocs {
+/*h1#cdndocs { 
 	margin-bottom: 0;
 	margin-top: 0em;
 	text-align: center;
@@ -800,7 +800,7 @@ table.RDXtable td{
 /*---------------------FORMAT LEGISLATION TABLE-------------------------*/
 /*----------------------------------------------------------------------*/
 
-h1.t1USLegislation {
+/*h1.t1USLegislation {
 	margin-bottom: 0;
 	margin-top: 0;
 	text-align: center;
@@ -832,7 +832,7 @@ table.t1USLegislation td {
 /*---------------------FORMAT USD ISSUER URL TABLES---------------------*/
 /*----------------------------------------------------------------------*/
 
-h1.t1USDI {
+/*h1.t1USDI {
 	margin-bottom: 0;
 	margin-top: 0;
 	text-align: center;
@@ -919,7 +919,7 @@ table.t1CBQueries td:nth-child(5) {   /* align query left  */
 /*---------------------FORMAT USEFUL LINKS------------------------------*/
 /*----------------------------------------------------------------------*/
 
-table.Ulink {
+/*table.Ulink {
       background-color: white; 
       float: left; 
       width: 100%; 
