@@ -145,6 +145,16 @@ nav#access {
 	vertical-align: middle;
 	font-weight: bold;
 	color: white;
+	position: relative;
+	list-style-type:none;
+	list-style-image:none;
+}
+
+#access ul ul li {
+	float: none;
+	width: 100%;
+	display: block;
+	height: auto;
 }
 
 #access a {
