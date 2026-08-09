@@ -239,6 +239,7 @@ ul.menu {
 ul.menu > li {
     position: relative;
     display: inline-block;
+	background: white;
 }
 
 ul.menu > li > a {
