@@ -291,6 +291,7 @@ ul.submenu li a:hover {
 ul.menu li:hover > ul.submenu,
 ul.submenu li:hover > ul.submenu {
     display: block;
+	z-index: 99999;
 }
 
 /* Position deeper submenus to the right */
@@ -326,9 +327,9 @@ ul.submenu li ul.submenu {
 	display: block;
 }
 
-/*#access ul li:hover {
+#access ul li:hover {
 	background-color: lightgoldenrodyellow ;  
-}*/
+}
 
 #access ul ul a:hover {
 	background-color: lightpink ;  
