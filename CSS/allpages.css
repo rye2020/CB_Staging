@@ -313,8 +313,6 @@ ul.submenu li ul.submenu {
 
 #access ul:hover > ul {
 	background-color: lightsteelblue;
-	opacity: 1 !important;
-	z-index: 99999 !important;
 }
 
 #access ul li a:hover {          
