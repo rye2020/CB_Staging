@@ -136,6 +136,7 @@ nav#access {
 	list-style: none;
 	padding-left: 0;
 	margin: 0 0 0 -0.8125em;
+	width:min-content
 }
 
 #access li {
@@ -143,7 +144,6 @@ nav#access {
 	vertical-align: middle;
 	font-weight: bold;
 	color: white;
-	width:min-content
 }
 
 #access a {
