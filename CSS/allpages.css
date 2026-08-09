@@ -175,9 +175,9 @@ nav#access {
 .nav-menu ul,
 .sub-menu,
 .dropdown-menu {
-    background-color: #ffffff !important; /* Changes background to solid white */
-    opacity: 1 !important;                 /* Forces full visibility */
-    z-index: 99999 !important;             /* Ensures it sits on top of text */
+    background-color: lightsteelblue; /* Changes background to solid white */
+    opacity: 1 ;                 /* Forces full visibility */
+    z-index: 99999;             /* Ensures it sits on top of text */
 }
 
 ul.menu { 
