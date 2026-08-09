@@ -229,6 +229,80 @@ button.sub-menu-toggle {
 	width: 100%;
 }
 
+/*-------Multi-Level indented Dropdown------------*/
+
+/* Base menu styles */
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+
+ul.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background: #444;
+}
+
+/* Submenu styles (applies to all levels) */
+ul.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Default for deeper levels */
+    display: none; /* Hidden by default */
+    background: #444;
+    min-width: 180px;
+}
+
+/* First-level submenu should appear below parent */
+ul.menu > li > ul.submenu {
+    top: 100%;
+    left: 0;
+}
+
+/* Indent submenu items */
+ul.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    padding-left: 30px; /* Indent */
+    color: white;
+    text-decoration: none;
+}
+
+ul.submenu li a:hover {
+    background: #555;
+}
+
+/* Show submenu on hover */
+ul.menu li:hover > ul.submenu,
+ul.submenu li:hover > ul.submenu {
+    display: block;
+}
+
+/* Position deeper submenus to the right */
+ul.submenu li {
+    position: relative;
+}
+
+ul.submenu li ul.submenu {
+    top: 0;
+    left: 100%;
+}
+
 /*----------------BACKGROUND COLOR-------------*/
 
 #access ul ul {
