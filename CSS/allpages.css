@@ -218,22 +218,21 @@ button.sub-menu-toggle {
 }
 
 #access ul li a:hover {          
-	background-color: lightcoral  !important;
-	color: black !important;    /*  Force black text on parent LI */
+	background-color: lightcoral;
+	color: black;    /*  Force black text on parent LI */
 }
 
 #access li:hover > ul {
-	background-color: lightgreen;  /* light green bar on each 1st LI */
+	/*background-color: lightgreen;  ***********/
 	display: block;
 }
 
 #access ul li:hover {
-	background-color: lightgoldenrodyellow ;  /* #e0e0e0;    */
-	/* Slightly darker grey on hover */
+	background-color: lightgoldenrodyellow ;  
 }
 
 #access ul ul a:hover {
-	background-color: lightpink ;  /* each LI hovered over */
+	background-color: lightpink ;  
 }
 
 /*! ---END FORMAT MENUS------*/
