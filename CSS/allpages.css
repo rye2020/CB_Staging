@@ -124,8 +124,8 @@ article.j1 {
 nav#access {
 	margin: 0 0 10px 0;
 	background: blue;
-		/*hsla(240,50%,60%,0.8)*/  /* change background color to BLUE  */
 	display: block;
+	line-height: 30px;
 }
 
 #access {
