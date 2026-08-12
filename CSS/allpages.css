@@ -276,7 +276,7 @@ ul.menu > li > a:hover {
 }
 
 /* Submenu styles (applies to all levels) */
-ul.submenu {
+ul.sub-menu {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -289,14 +289,14 @@ ul.submenu {
 }
 
 /* First-level submenu should appear below parent */
-ul.menu > li > ul.submenu {
+ul.menu > li > ul.sub-menu {
     top: 100%;
     left: 0;
 	display:none;
 }
 
 /* Indent submenu items */
-ul.submenu li a {
+ul.sub-menu li a {
     display: block;
     padding: 10px 15px;
     padding-left: 30px; /* Indent */
@@ -304,23 +304,23 @@ ul.submenu li a {
     text-decoration: none;
 }
 
-ul.submenu li a:hover {
+ul.sub-menu li a:hover {
     background: #555;
 }
 
 /* Show submenu on hover */
-ul.menu li:hover > ul.submenu,
-ul.submenu li:hover > ul.submenu {
+ul.menu li:hover > ul.sub-menu,
+ul.sub-menu li:hover > ul.sub-menu {
     display: block;
 	z-index: 99999;
 }
 
 /* Position deeper submenus to the right */
-ul.submenu li {
+ul.sub-menu li {
     position: relative;
 }
 
-ul.submenu li ul.submenu {
+ul.sub-menu li ul.sub-menu {
     top: 0;
     left: 100%;
 }
