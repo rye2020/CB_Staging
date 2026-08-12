@@ -235,7 +235,7 @@ button.sub-menu-toggle {
 /**************************************************/
 /*---------------Test Bed for Menu Formatting-----*/
 /**************************************************/
-ul.menu li {
+.menu li {
 	background: brightpurple;
 }
 
