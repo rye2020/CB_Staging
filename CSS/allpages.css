@@ -183,10 +183,10 @@ ul.menu {
 	display: flex;
 }
 
-.menu ul li {
+/*.menu ul li {
 	color: blue;
 	background: white;
-}
+}*/
 
 .wp-block-gallery.columns-4.is-layout-flex {
     display: flex;
