@@ -239,9 +239,6 @@ ul.menu li {
 	background: brightpurple;  /***  NO EFFECT **/
 }
 
-.menu li {
-	background: orange;  
-}/**************************THIS WORKS FOR ALL li's*********/
 /*#access ul ul li {
 	background: rgb(17, 0, 255);  THIS DOES NOTHING I CAN SEE
 }*/
@@ -285,12 +282,12 @@ ul.sub-menu {
     left: 100%; /* Default for deeper levels */
     display: none; /* Hidden by default */
     background: #444;
-    min-width: 180px;
+   /* min-width: 180px; */
 }
 
 /* First-level submenu should appear below parent */
 ul.menu > li > ul.sub-menu {
-    top: 100%;
+  /*  top: 100%; */
     left: 0;
 	display:none;
 }
