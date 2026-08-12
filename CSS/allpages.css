@@ -236,13 +236,15 @@ button.sub-menu-toggle {
 /*---------------Test Bed for Menu Formatting-----*/
 /**************************************************/
 .menu li {
-	background: brightpurple;
+	background: brightpurple;  /***  NO EFFECT **/
 }
 
 /*#access li {
 	background: orange;  
 }**************************THIS WORKS FOR ALL li's*********//
-
+#access ul ul li {
+	background: rgb(17, 0, 255);  
+}
 
 /****************END OF TEST BED*******************/
 
