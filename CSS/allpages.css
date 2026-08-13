@@ -235,9 +235,6 @@ button.sub-menu-toggle {
 /**************************************************/
 /*---------------Test Bed for Menu Formatting-----*/
 /**************************************************/
-ul.menu li {
-	background: brightpurple;  /***  NO EFFECT **/
-}
 
 /*#access ul ul li {
 	background: rgb(17, 0, 255);  THIS DOES NOTHING I CAN SEE
