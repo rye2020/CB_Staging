@@ -343,10 +343,6 @@ ul.sub-menu li ul.sub-menu {
 	display: block;
 }
 
-#access ul li:hover {
-	background-color: lightgoldenrodyellow ;  
-}
-
 #access ul ul a:hover {
 	background-color: lightpink ;  
 }
