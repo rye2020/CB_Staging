@@ -259,7 +259,7 @@ ul.menu {
 }
 
 ul.menu > li {
-    position: absolute;
+    position: relative;
     display: inline-block;
 }
 
