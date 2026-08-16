@@ -248,8 +248,6 @@ button.sub-menu-toggle {
 
 #access ul.sub-menu {
     position: absolute;
-    top: 0;
-    left: 100%;
     display: none;
     background: #444;
 }
