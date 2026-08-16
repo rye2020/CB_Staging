@@ -240,6 +240,12 @@ button.sub-menu-toggle {
 	background: rgb(17, 0, 255);  THIS DOES NOTHING I CAN SEE
 }*/
 
+#access ul:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /****************END OF TEST BED*******************/
 
 
