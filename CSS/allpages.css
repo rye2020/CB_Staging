@@ -160,7 +160,7 @@ ul.menu:after {
 
 ul.menu > li {
 	position: relative;
-	height: 30px;
+	height: 20px;
 	display: inline-block;
 	vertical-align: middle;
 	font-weight: bold;
