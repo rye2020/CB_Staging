@@ -131,8 +131,7 @@ article.j1 {
 
 #access {
 	margin: 0 auto 6px;
-	background: #222; /* solid fallback for older browsers */
-	background: linear-gradient(#252525, #0a0a0a);
+	background: blue;
 	display: block;
 	float: left;
 	clear: both;
@@ -186,20 +185,28 @@ ul.menu > li > a:hover {
 /* ---------------------------------------------------------
    3. SUBMENUS (all levels)
    Grouped and ordered by nesting depth so specificity stays
-   predictable. Keep #access on the "position" rule only -
-   it must outrank #access ul's `position: relative`, but
-   should NOT carry top/left, or it will win those too and
-   break the depth-specific placement rules below.
+   predictable. position and display are deliberately split
+   into separate rules at different specificity levels - see
+   the note above the base rule below for why.
    --------------------------------------------------------- */
 
-/* Base: every submenu is absolutely positioned, hidden by default */
+/* Base: every submenu is absolutely positioned.
+   Kept ID-scoped ONLY for `position` (nothing else competes for
+   position at ID-level specificity anymore, but keeping this scoped
+   tightly avoids reopening that fight later). display:none is handled
+   separately below at class-level, so the class-based hover rule can
+   still override it - an ID-scoped display:none can never be beaten
+   by a non-ID hover rule, no matter how many classes it has. */
 #access ul.sub-menu {
 	position: absolute;
-	display: none;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	background-color: lightsteelblue;
+}
+
+ul.sub-menu {
+	display: none;
 }
 
 /* Submenu items stack full-width, no floats */
@@ -275,7 +282,7 @@ button.sub-menu-toggle {
 	outline: none;
 	border: none;
 }
-/***************END NAV MENU FORMATTING**********************/
+
 
 /*! ---END FORMAT MENUS------*/
 
