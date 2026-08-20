@@ -454,7 +454,6 @@ nav.navigation.post-navigation {
 		content: attr(data-label);
 		position: absolute;
 		/* Top/left values mimic padding */
-		top: 6px;
 		left: 6px;
 		font-weight: bold;
 		text-transform: uppercase;
