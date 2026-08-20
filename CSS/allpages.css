@@ -310,26 +310,9 @@ nav.navigation.post-navigation {
 /*---------------------RESPONSIVE ADJUSTMENTS---------------------------*/
 /*----------------------------------------------------------------------*/
 
-.home-container {
-	display: flex;
-	flex-wrap: nowrap;
-	-webkit-flex: 1;
-	flex: 1;
-	/*	    -moz-flex: 1;
-	    -ms-flex: 1;
-	    -webkit-flex-direction: column;
-	    -moz-flex-direction: column;
-	    -ms-flex-direction: column;*/
-}
-
 @media only screen and (max-width: 1024px) {
 
 	/* Apply to all mobile devices */
-	.home-box {
-		width: 100%;
-		max-width: none;
-	}
-
 	#access div {
 		padding-right: 0px;
 		/*  eliminate the padding on the right for the menu  */
@@ -454,7 +437,6 @@ nav.navigation.post-navigation {
 		border-bottom: 3px solid #ddd;
 		display: block;
 		margin-bottom: .625em;
-		margin-left: 5em;
 	}
 
 	table.t1CanadianCBD td {
@@ -473,6 +455,7 @@ nav.navigation.post-navigation {
 		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
+		right: 5em;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
