@@ -29,57 +29,7 @@
 	<?php
 	$GLOBALS['header_tables_loaded'] = true;
 	?>
-    <!---Responsive tables---------------------------->
-	<script>
-		// Detect mobile device and change to single column
-    document.addEventListener('DOMContentLoaded', jmMobile);
-		
-    screen.orientation.addEventListener('change', jmInsert); 
-		
-	function jmInsert() {
-		var myWrap = document.getElementById('jmWrap');
-		if ( jmWrap !== null) {
-		var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-		var myDiv = document.getElementById('jm-filter');
-		var myTopDiv = document.getElementById('top');
-		let orientationType = screen.orientation.type; // e.g., "portrait-primary", "landscape-secondary"
-		if(isMobile) {
-			if (orientationType.includes ("portrait")) {
-				myDiv.remove();
-				myTopDiv.style.paddingLeft = "10px";
-			} else {
-			if (!myDiv){
-				myTopDiv.style.paddingLeft = "40px";
-				myWrap.innerHTML = `
-<div id="jm-filter" style="width:250px; ">
-	<br><br><br><br>
-<?php include ( get_stylesheet_directory() . '/includes/FilterAGGform.php'); ?>
-<?php include ( get_stylesheet_directory() . '/includes/RecentPosts_inc.php');?>
-</div>
-`;
-			}
-			}
-		}	
-	};
-	}
-
-  function jmMobile() {
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    var myDiv = document.getElementById('jm-filter');
-	var myTopDiv = document.getElementById('top');
-    var tbHead = document.querySelector('.t1CanadianCBD');
-    const jmWidth = window.innerWidth;
-    
-    if (isMobile && jmWidth < 600) {
-        myDiv.remove();         // Remove filters and recent posts
-		myTopDiv.style.paddingLeft = "10px";
-		tbHead.style.width = "100%";
-    } 
-	if (isMobile) { tbHead.style.width = "100%"; }
-}
-	</script>
-	<!---End Responsive Tables---------------------------->
-	<meta charset="<?php bloginfo('charset'); ?>" />
+  	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width" />
 	<meta name="msvalidate.01" content="957CB525435BA5E49FCE1E1493C6737E" />
 	<title>
@@ -111,6 +61,7 @@
 
 	<!--JRM - include sort table code -->
 	<script src="/wp-includes/js/sorttable.js" type="text/javascript"></script>
+	<script src="/wp-content/js/jm-mobile-tables" type="text/javascript"></script>
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> <!--JM 3/20-->
 
