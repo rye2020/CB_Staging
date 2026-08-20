@@ -1,6 +1,5 @@
     <!---Responsive tables---------------------------->
-	<script>
-		// Detect mobile device and change to single column
+	// Detect mobile device and change to single column
     document.addEventListener('DOMContentLoaded', jmMobile);
 		
     screen.orientation.addEventListener('change', jmInsert); 
@@ -46,4 +45,4 @@
     } 
 	if (isMobile) { tbHead.style.width = "100%"; }
 }
-	</script>
+	
