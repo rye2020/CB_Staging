@@ -447,13 +447,14 @@ nav.navigation.post-navigation {
 		position: relative;
 		padding-left: 20%;
 		width: 100%;
-		text-indent: 3em;
+		text-indent: 1em;
 	}
 
 	table.t1CanadianCBD td::before {
 		content: attr(data-label);
 		position: absolute;
 		/* Top/left values mimic padding */
+		top: 6px;
 		left: 6px;
 		font-weight: bold;
 		text-transform: uppercase;
