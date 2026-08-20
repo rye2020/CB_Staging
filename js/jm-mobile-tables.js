@@ -38,11 +38,15 @@
     var tbHead = document.querySelector('.t1CanadianCBD');
     const jmWidth = window.innerWidth;
     
-    if (isMobile && jmWidth < 600) {
+    if (isMobile && jmWidth < 768) {
         myDiv.remove();         // Remove filters and recent posts
 		myTopDiv.style.paddingLeft = "10px";
 		tbHead.style.width = "100%";
+		alert("width:"jmWidth);
     } 
-	if (isMobile) { tbHead.style.width = "100%"; }
+	if (isMobile) { 
+		tbHead.style.width = "100%";
+		alert("width:"jmWidth);
+	}
 }
 	
