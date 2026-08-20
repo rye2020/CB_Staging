@@ -454,6 +454,7 @@ nav.navigation.post-navigation {
 		border-bottom: 3px solid #ddd;
 		display: block;
 		margin-bottom: .625em;
+		margin-left: 5em;
 	}
 
 	table.t1CanadianCBD td {
@@ -475,15 +476,6 @@ nav.navigation.post-navigation {
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-
-		table.t1CanadianCBD td::after {
-		content: "";
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		right: 20px;
-	}
-
 
 	table.t1CanadianCBD td:last-child {
 		border-bottom: 0;
