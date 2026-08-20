@@ -442,10 +442,10 @@ nav.navigation.post-navigation {
 	table.t1CanadianCBD td {
 		border-bottom: 1px solid #ddd;
 		display: block;
-		font-size: .7em;
+		font-size: .5em;
 		text-align: left !important;
 		position: relative;
-		padding-left: 50%;
+		padding-left: 30%;
 		width: 100%;
 		text-indent: 1em;
 	}
