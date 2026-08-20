@@ -67,13 +67,15 @@
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     var myDiv = document.getElementById('jm-filter');
 	var myTopDiv = document.getElementById('top');
-   // var tbHead = document.getElementById('tbl-head');
+    var tbHead = document.getElementById('tbl-table');
     const jmWidth = window.innerWidth;
     
     if (isMobile && jmWidth < 600) {
         myDiv.remove();         // Remove filters and recent posts
 		myTopDiv.style.paddingLeft = "10px";
+		tbHead.style.width = "500px";
     } 
+	if (isMobile) { tbHead.style.width = "100%"; }
 }
 	</script>
 	<!---End Responsive Tables---------------------------->
