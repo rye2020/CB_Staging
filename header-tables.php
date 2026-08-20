@@ -67,7 +67,7 @@
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     var myDiv = document.getElementById('jm-filter');
 	var myTopDiv = document.getElementById('top');
-    var tbHead = document.getElementById('tbl-head');
+   // var tbHead = document.getElementById('tbl-head');
     const jmWidth = window.innerWidth;
     
     if (isMobile && jmWidth < 600) {
