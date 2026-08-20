@@ -62,7 +62,7 @@
 	<!--JRM - include sort table code -->
 	<script src="/wp-includes/js/sorttable.js" type="text/javascript"></script>
 	<!--JRM - load mobile tables javascript-->
-	<script src="/wp-content/themes/twentytwentyone-child/js/jm-mobile-tables.js" type="text/javascript"></script>
+	<script src="https://www.us-covered-bonds.com/staging/3708/wp-content/themes/twentytwentyone-child/js/jm-mobile-tables.js" type="text/javascript"></script>
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> <!--JM 3/20-->
 
