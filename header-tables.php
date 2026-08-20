@@ -73,7 +73,7 @@
     if (isMobile && jmWidth < 600) {
         myDiv.remove();         // Remove filters and recent posts
 		myTopDiv.style.paddingLeft = "10px";
-		tbHead.style.width = jmWidth;
+		tbHead.style.width = "100% !important";
     } 
 	if (isMobile) { tbHead.style.width = "100%"; }
 }
