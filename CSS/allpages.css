@@ -476,6 +476,15 @@ nav.navigation.post-navigation {
 		text-transform: uppercase;
 	}
 
+		table.t1CanadianCBD td::after {
+		content: "";
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		right: 20px;
+	}
+
+
 	table.t1CanadianCBD td:last-child {
 		border-bottom: 0;
 	}
