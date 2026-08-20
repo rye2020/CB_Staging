@@ -403,28 +403,10 @@ nav.navigation.post-navigation {
 		margin: 0
 	}
 
-	.home-box {
-		width: 100%;
-		max-width: none;
-	}
-
-	.home-container {
-		display: flex;
-		flex-wrap: nowrap;
-		-webkit-flex: 1;
-		-moz-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-	}
-
 	h1.t1USDCB {
 		font-size: 18px;
 		text-align: left;
 		font-weight: bold;
-	}
-
-	.Fcontainer {
-		max-width: 56%;
 	}
 
 	p.jmsorter {
@@ -502,25 +484,11 @@ nav.navigation.post-navigation {
 
 @media only screen and (max-width: 768px) and (min-width: 482px) and (orientation: landscape) {
 	body {
-		width: 768px;
-	}
-
-	.home-box {
-		width: 100%;
-		max-width: none;
+		max-width: 768px;
 	}
 
 	#main #content {
 		margin: 0
-	}
-
-	.home-container {
-		display: flex;
-		flex-wrap: nowrap;
-		-webkit-flex: 1;
-		-moz-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
 	}
 
 	h1.t1USDCB {
@@ -534,12 +502,6 @@ nav.navigation.post-navigation {
 		width: 27%;
 		max-width: 110px;
 		background-color: green;
-	}
-
-	div.Fcontainer {
-		/* make room for Twitter widget   */
-		width: 90%;
-		max-width: 70%;
 	}
 
 	div.jmpost {
