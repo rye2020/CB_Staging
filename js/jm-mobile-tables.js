@@ -43,6 +43,7 @@
 	alert("width: " + jmWidth + "");
 	alert("isMobile: " + isMobile + "");
 	alert("Size: " + (jmWidth < 768) + "");
+	alert(myDiv);
     if (isMobile && ( jmWidth < 768 ) ) {
         myDiv.remove();         // Remove filters and recent posts
 		myTopDiv.style.paddingLeft = "10px";
