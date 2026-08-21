@@ -1,5 +1,5 @@
 // Responsive filter panel: show on mobile landscape, hide on mobile portrait
-document.addEventListener('DOMContentLoaded', function () {
+function initFilterPanel() {
 	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 	var myWrap = document.getElementById('jmWrap');
 	var myTopDiv = document.getElementById('top');
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (screen.orientation && screen.orientation.type) {
 			return screen.orientation.type; // "portrait-primary", "landscape-secondary", etc.
 		}
-		// Fallback for browsers without the Screen Orientation API (older iOS Safari)
 		return window.matchMedia('(orientation: portrait)').matches ? 'portrait' : 'landscape';
 	}
 
@@ -34,14 +33,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-	// Run once on load (covers "page loaded in portrait or landscape")
-	updateFilterPanel();
+	updateFilterPanel(); // run once immediately
 
-	// Run again on every orientation change
 	if (screen.orientation && screen.orientation.addEventListener) {
 		screen.orientation.addEventListener('change', updateFilterPanel);
 	} else {
-		// Fallback for browsers without screen.orientation
 		window.addEventListener('resize', updateFilterPanel);
 	}
-});
+}
+
+// Guard against the DOMContentLoaded event having already fired
+// before this script executed (happens with async/defer script loading).
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', initFilterPanel);
+} else {
+	initFilterPanel();
+}
