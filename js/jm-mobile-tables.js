@@ -41,7 +41,7 @@
     const jmWidth = window.innerWidth;
     
 	alert("width: " + jmWidth + "");
-    if (isMobile && jmWidth < 768) {
+    if (isMobile && ( jmWidth < 768 ) ) {
         myDiv.remove();         // Remove filters and recent posts
 		myTopDiv.style.paddingLeft = "10px";
 		tbHead.style.width = "100%";
