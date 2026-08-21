@@ -283,6 +283,34 @@ button.sub-menu-toggle {
 	border: none;
 }
 
+ul.menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 -0.8125em;
+}
+
+/* Force single-line, no-wrap on wider screens (current desktop look) */
+@media (min-width: 782px) {
+	ul.menu {
+		flex-wrap: nowrap;
+		white-space: nowrap;
+		width: min-content;
+	}
+}
+
+/* Allow wrapping on small screens */
+@media (max-width: 781px) {
+	ul.menu {
+		flex-wrap: wrap;
+		white-space: normal;
+		width: 100%;
+	}
+	ul.menu > li:first-of-type {
+		margin-left: 0;
+	}
+}
+
 .nav-toggle { display: none; ... }
 .nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { ... }
 
