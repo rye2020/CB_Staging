@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	toggle.addEventListener('click', function () {
 		var isOpen = access.classList.toggle('nav-open');
 		toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+		document.body.classList.toggle('nav-menu-open', isOpen);
 	});
 
 	// Items with children: on small screens, first tap opens the submenu
