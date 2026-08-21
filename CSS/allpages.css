@@ -283,6 +283,15 @@ button.sub-menu-toggle {
 	border: none;
 }
 
+.nav-toggle { display: none; ... }
+.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { ... }
+
+@media (max-width: 781px) {
+	.nav-toggle { display: block; }
+	#access .menu-menu-a-container { display: none; width: 100%; }
+	#access.nav-open .menu-menu-a-container { display: block; }
+	...
+}
 
 /*! ---END FORMAT MENUS------*/
 
