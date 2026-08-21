@@ -1,6 +1,6 @@
     <!---Responsive tables---------------------------->
 	// Detect mobile device and change to single column
-    document.addEventListener('DOMContentLoaded', jmInsert);
+    window.addEventListener('load', jmMobile);
 		
     screen.orientation.addEventListener('change', jmInsert); 
 		
