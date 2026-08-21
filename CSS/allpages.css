@@ -131,7 +131,7 @@ article.j1 {
 
 #access {
 	margin: 0 auto 6px;
-	background: black;
+	background: blue;
 	display: block;
 	float: left;
 	clear: both;
@@ -220,7 +220,7 @@ ul.sub-menu {
 
 #access ul.sub-menu li a {
 	display: block;
-	padding: 5px 15px 5px 30px; /* indent */
+	padding: 10px 15px 10px 30px; /* indent */
 	color: white;
 	text-decoration: none;
 }
@@ -283,44 +283,112 @@ button.sub-menu-toggle {
 	border: none;
 }
 
-ul.menu {
-	display: flex;
-	list-style: none;
+/* ---------------------------------------------------------
+   7. HAMBURGER TOGGLE (small screens)
+   Requires a button in the markup - see accompanying note
+   on where to add it in header.php:
+
+   <button class="nav-toggle" aria-expanded="false" aria-controls="menu-menu-a">
+       <span class="screen-reader-text">Menu</span>
+       <span class="nav-toggle-bars"></span>
+   </button>
+
+   Placed as a direct child of #access, immediately before
+   .menu-menu-a-container. JS toggles a `.nav-open` class on
+   #access (see nav-toggle.js).
+   --------------------------------------------------------- */
+
+.nav-toggle {
+	display: none; /* hidden on wide screens */
+	background: transparent;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	width: 44px;
+	height: 44px;
 	padding: 0;
-	margin: 0 0 0 -0.8125em;
+	margin: 0 0 0 10px;
+	padding-left: 10px; /* nudges the icon right, adds breathing room from whatever sits to the left */
+	cursor: pointer;
+	position: relative;
 }
 
-/* Force single-line, no-wrap on wider screens (current desktop look) */
-@media (min-width: 782px) {
-	ul.menu {
-		flex-wrap: nowrap;
-		white-space: nowrap;
-		width: min-content;
-	}
+.nav-toggle-bars {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 24px;
+	height: 3px;
+	background: white;
+	transform: translate(-50%, -50%);
 }
 
-/* Allow wrapping on small screens */
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 24px;
+	height: 3px;
+	background: white;
+}
+
+.nav-toggle-bars::before {
+	top: -9px;
+}
+
+.nav-toggle-bars::after {
+	top: 9px;
+}
+
 @media (max-width: 781px) {
-	ul.menu {
-		flex-wrap: wrap;
-		white-space: normal;
+
+	.nav-toggle {
+		display: block;
+	}
+
+	/* Menu hidden by default, shown when JS adds .nav-open to #access */
+	#access .menu-menu-a-container {
+		display: none;
 		width: 100%;
 	}
-	ul.menu > li:first-of-type {
+
+	#access.nav-open .menu-menu-a-container {
+		display: block;
+	}
+
+	/* Stack top-level items in a column instead of a row */
+	#access.nav-open ul.menu {
+		display: block;
+		width: 100%;
+		white-space: normal;
+	}
+
+	#access.nav-open ul.menu > li {
+		width: 100%;
+		height: auto;
+	}
+
+	#access.nav-open ul.menu > li:first-of-type {
 		margin-left: 0;
 	}
+
+	/* Submenus stack inline below their parent instead of flying out,
+	   since absolute-positioned flyouts don't work well in a column
+	   layout with no hover on touch devices */
+	#access.nav-open ul.sub-menu {
+		display: none;
+		position: static;
+		background-color: rgba(255, 255, 255, 0.08);
+	}
+
+	#access.nav-open li.submenu-open > ul.sub-menu {
+		display: block;
+	}
 }
-
-.nav-toggle { display: none; ... }
-.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { ... }
-
-@media (max-width: 781px) {
-	.nav-toggle { display: block; }
-	#access .menu-menu-a-container { display: none; width: 100%; }
-	#access.nav-open .menu-menu-a-container { display: block; }
-	...
-}
-
 /*! ---END FORMAT MENUS------*/
 
 /*----------------------------------------------------------------------*/
