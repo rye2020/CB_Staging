@@ -1,18 +1,18 @@
-    <!--- Responsive tables---------------------------->
+    //----------------- Responsive tables---------------------------->
 	// Detect mobile device and change to single column
 
 	screen.orientation.addEventListener('change', jmInsert);
 
 function jmInsert() {
 	var myWrap = document.getElementById('jmWrap');
-	if (jmWrap !== null) {
+	if (myWrap !== null) {
 		var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 		var myDiv = document.getElementById('jm-filter');
 		var myTopDiv = document.getElementById('top');
 		let orientationType = screen.orientation.type; // e.g., "portrait-primary", "landscape-secondary"
 		if (isMobile) {
 			if (orientationType.includes("portrait")) {
-				myDiv.remove();
+				if (myDiv !== null) {myDiv.remove();}
 				myTopDiv.style.paddingLeft = "10px";
 			} else {
 				if (!myDiv) {
@@ -55,7 +55,7 @@ $(document).ready(function () {
 		alert(myTopDiv);
 		alert(tbHead);
 		if (isMobile && (jmWidth < 768)) {
-			myDiv.remove();         // Remove filters and recent posts
+			if (myDiv !== null) {myDiv.remove();}         // Remove filters and recent posts
 			myTopDiv.style.paddingLeft = "10px";
 			tbHead.style.width = "100%";
 			alert(jmWidth);
@@ -64,4 +64,5 @@ $(document).ready(function () {
 			tbHead.style.width = "100%";
 			alert(jmWidth);
 		}
+})
 })
