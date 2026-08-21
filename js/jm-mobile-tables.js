@@ -15,9 +15,11 @@
 			if (orientationType.includes ("portrait")) {
 				myDiv.remove();
 				myTopDiv.style.paddingLeft = "10px";
+				alert("Portrait");
 			} else {
 			if (!myDiv){
 				myTopDiv.style.paddingLeft = "40px";
+				alert("Landscape");
 				myWrap.innerHTML = `
 <div id="jm-filter" style="width:250px; ">
 	<br><br><br><br>
