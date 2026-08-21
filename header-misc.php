@@ -128,6 +128,10 @@
 			<?php endif; ?>
 
 			<nav id="access" role="navigation">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="menu-menu-a">
+					<span class="screen-reader-text">Menu</span>
+					<span class="nav-toggle-bars"></span>
+				</button>
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
 				<div class="skip-link"><a class="assistive-text" href="#content"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>

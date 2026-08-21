@@ -75,6 +75,10 @@
 			
 				<?php get_search_form(); ?>
 			<nav id="access" role="navigation">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="menu-menu-a">
+					<span class="screen-reader-text">Menu</span>
+					<span class="nav-toggle-bars"></span>
+				</button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->
 
