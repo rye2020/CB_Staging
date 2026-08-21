@@ -351,6 +351,7 @@ function jm_load_page_css() {
             filemtime( get_stylesheet_directory() . '/js/jm-mobile-tables.js' ), // auto-bumps ver= on every file change
             true
         );
+        wp_enqueue_script('nav-toggle', get_stylesheet_directory_uri() . '/js/nav-toggle.js', array(), '1.0', true);
         unset($GLOBALS['header_tables_loaded']);
         return;
     }
