@@ -40,7 +40,7 @@
     var tbHead = document.querySelector('.t1CanadianCBD');
     const jmWidth = window.innerWidth;
     
-	alert("width: " + jmWidth +""};
+	alert("width: " + jmWidth + "");
     if (isMobile && jmWidth < 768) {
         myDiv.remove();         // Remove filters and recent posts
 		myTopDiv.style.paddingLeft = "10px";
