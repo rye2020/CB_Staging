@@ -17,7 +17,7 @@ function initFilterPanel() {
 	}
 
 	function updateFilterPanel() {
-		var myDiv = document.getElementById('jm-filter');
+		var myDiv = document.getElementById('jmfilter');
 		var isPortrait = getOrientation().includes('portrait');
 
 		if (isPortrait) {
