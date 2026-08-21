@@ -346,7 +346,11 @@ function jm_load_page_css() {
     if (!empty($GLOBALS['header_tables_loaded'])) {
 
         wp_enqueue_style('CB_Tables', get_stylesheet_directory_uri() . '/CSS/CBTables.css');
-
+        wp_enqueue_script( 'jm-mobile-tables',
+            get_stylesheet_directory_uri() . '/js/jm-mobile-tables.js', array(),
+            filemtime( get_stylesheet_directory() . '/js/jm-mobile-tables.js' ), // auto-bumps ver= on every file change
+            true
+        );
         unset($GLOBALS['header_tables_loaded']);
         return;
     }
