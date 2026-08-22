@@ -349,6 +349,18 @@ button.sub-menu-toggle {
 		display: block;
 	}
 
+	/* Collapse the bar to the size of the hamburger button when the
+	   menu is closed, instead of a full-width blue strip with nothing
+	   in it. Once opened, #access needs to go back to full width so
+	   the stacked menu below it can lay out correctly. */
+	#access {
+		width: fit-content;
+	}
+
+	#access.nav-open {
+		width: 100%;
+	}
+
 	/* Menu hidden by default, shown when JS adds .nav-open to #access */
 	#access .menu-menu-a-container {
 		display: none;
