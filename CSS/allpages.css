@@ -131,9 +131,8 @@ article.j1 {
 
 #access {
 	margin: 0 auto 6px;
-	background: black;
+	background: blue;
 	display: block;
-	float: left;
 	clear: both;
 	width: 100%;
 	line-height: 30px;
@@ -387,18 +386,20 @@ button.sub-menu-toggle {
 
 	#access.nav-open li.submenu-open > ul.sub-menu {
 		display: block;
-		/* Hide Twitter/X embeds (and similar iframe embeds) while the mobile
-		menu is open. Iframes paint on their own compositing surface and
-		can intercept taps meant for the dropdown underneath, regardless
-		of z-index - hiding them is more reliable than fighting stacking order. */
-		body.nav-menu-open .twitter-tweet,
-		body.nav-menu-open iframe[src*="twitter.com"],
-		body.nav-menu-open iframe[src*="platform.twitter.com"],
-		body.nav-menu-open iframe[src*="x.com"],
-		body.nav-menu-open iframe[title*="Twitter" i],
-		body.nav-menu-open iframe[title*="X Post" i] {
-			visibility: hidden;
-		}
+	}
+
+	/* Hide Twitter/X embeds (and similar iframe embeds) while the mobile
+	   menu is open. Iframes paint on their own compositing surface and
+	   can intercept taps meant for the dropdown underneath, regardless
+	   of our z-index - hiding them is more reliable than fighting
+	   stacking order. */
+	body.nav-menu-open .twitter-tweet,
+	body.nav-menu-open iframe[src*="twitter.com"],
+	body.nav-menu-open iframe[src*="platform.twitter.com"],
+	body.nav-menu-open iframe[src*="x.com"],
+	body.nav-menu-open iframe[title*="Twitter" i],
+	body.nav-menu-open iframe[title*="X Post" i] {
+		visibility: hidden;
 	}
 }
 /*! ---END FORMAT MENUS------*/
@@ -473,12 +474,13 @@ nav.navigation.post-navigation {
 		padding: 0;
 	}
 
-	#access {
-		margin: 0;
-		width: auto;
-		padding: 0;
-		border: 0;
-	}
+	/* NOTE: the old #access { margin:0; width:auto; padding:0; border:0; }
+	   reset that used to live here has been removed - it was fighting
+	   the Section 1 container rule (width: 100%) and the mobile menu
+	   rules above at every width between 482px and 1024px. If #access
+	   needs different sizing specifically in this 782-1024px "tablet"
+	   range (wider than the hamburger breakpoint, narrower than desktop),
+	   add a scoped rule here instead of a bare #access reset. */
 
 	#page #content #main {
 		width: auto;
