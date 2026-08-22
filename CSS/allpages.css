@@ -355,6 +355,8 @@ button.sub-menu-toggle {
 	   the stacked menu below it can lay out correctly. */
 	#access {
 		width: fit-content;
+			margin-left: 0;
+			margin-right: 0;
 	}
 
 	#access.nav-open {
