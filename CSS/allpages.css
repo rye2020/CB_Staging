@@ -297,7 +297,11 @@ button.sub-menu-toggle {
    #access (see nav-toggle.js).
    --------------------------------------------------------- */
 
-.nav-toggle {
+	#access {
+		background: white;
+	}
+
+   .nav-toggle {
 	display: none; /* hidden on wide screens */
 	background: transparent;
 	-webkit-appearance: none;
