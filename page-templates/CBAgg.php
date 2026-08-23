@@ -88,7 +88,7 @@ include( get_stylesheet_directory() . '/includes/FilterAGGtest.php');
       </div>
 
       <div id="jmWrap">
-      <div id="jmfilter" style="width:250px; ">
+      <div id="jmfilter" >
          <br><br><br><br>
          <?php include(get_stylesheet_directory() . '/includes/FilterAGGform.php'); ?>
          <?php include(get_stylesheet_directory() . '/includes/RecentPosts_inc.php'); ?>
