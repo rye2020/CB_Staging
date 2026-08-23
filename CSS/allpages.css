@@ -513,6 +513,8 @@ nav.navigation.post-navigation {
 	body {
 		width: auto;
 		Max-width: 100%;
+	}
+	#page {
 		padding: 0 1em;
 	}
 
