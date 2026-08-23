@@ -644,7 +644,7 @@ nav.navigation.post-navigation {
 		font-weight: bold;
 	}
 
-	.jmfilter {
+	#jmfilter {
 		padding-right: 1.5em;
 		width: 95%;
 	}
