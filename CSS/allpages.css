@@ -313,6 +313,7 @@ button.sub-menu-toggle {
 	padding-left: 10px; /* nudges the icon right, adds breathing room from whatever sits to the left */
 	cursor: pointer;
 	position: relative;
+	background: white; 
 }
 
 .nav-toggle-bars {
@@ -321,7 +322,7 @@ button.sub-menu-toggle {
 	left: 50%;
 	width: 24px;
 	height: 3px;
-	background: green;
+	background: blue;
 	transform: translate(-50%, -50%);
 }
 
@@ -332,7 +333,7 @@ button.sub-menu-toggle {
 	left: 0;
 	width: 24px;
 	height: 3px;
-	background: green;
+	background: blue;
 }
 
 .nav-toggle-bars::before {
