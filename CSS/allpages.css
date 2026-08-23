@@ -625,7 +625,8 @@ nav.navigation.post-navigation {
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
 	body {
-		max-width: 768px;
+		width: auto;
+		max-width: 100%px;
 	}
 
 	#page {
