@@ -321,7 +321,7 @@ button.sub-menu-toggle {
 	left: 50%;
 	width: 24px;
 	height: 3px;
-	background: white;
+	background: green;
 	transform: translate(-50%, -50%);
 }
 
@@ -332,7 +332,7 @@ button.sub-menu-toggle {
 	left: 0;
 	width: 24px;
 	height: 3px;
-	background: white;
+	background: green;
 }
 
 .nav-toggle-bars::before {
