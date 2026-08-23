@@ -644,6 +644,10 @@ nav.navigation.post-navigation {
 		font-weight: bold;
 	}
 
+	.jmwrap {
+		padding-right: 2em;
+	}
+
 	div.twitter-container {
 		/* adjust Twitter widget  */
 		width: 27%;
