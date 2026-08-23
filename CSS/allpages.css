@@ -644,8 +644,9 @@ nav.navigation.post-navigation {
 		font-weight: bold;
 	}
 
-	.jmwrap {
+	.jmfilter {
 		padding-right: 1.5em;
+		max-width: 95%;
 	}
 
 	div.twitter-container {
