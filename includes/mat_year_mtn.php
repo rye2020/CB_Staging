@@ -1,9 +1,9 @@
 <div class="filter_select"><label for='issueyrselect'>Issue Year</label>
-<input type="text" name="issueyrselect"  style="width: 55%; height: 10px; border: 1px solid grey; " placeholder="">
+<input type="text" name="issueyrselect"  style="width: 56%; height: 10px; border: 1px solid grey; " placeholder="">
 <br /></div>
 
 <div class="filter_select"><label for='maturityyrselect'>Maturity Year</label>
-<input type="text" name="maturityyrselect"  style="width: 55%; height: 10px; border: 1px solid grey;" placeholder="">
+<input type="text" name="maturityyrselect"  style="width: 56%; height: 10px; border: 1px solid grey;" placeholder="">
 </div>
 
 <div class="filter_select"><label for='matured'>Matured</label>
