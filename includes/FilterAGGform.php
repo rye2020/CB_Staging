@@ -3,7 +3,7 @@ div#secondary {
 	margin-right:0;
 	}
 </style>
-<aside id="jm-filters_posts"; style="font-size:small;">
+<aside style="font-size:small;">
 <p style="margin:0; text-decoration: underline;"><strong>Data Filters:</strong></p>
 <style scoped>
 	select {
