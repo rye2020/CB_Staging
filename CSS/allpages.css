@@ -301,6 +301,10 @@ button.sub-menu-toggle {
 		background: white;
 	}
 
+	#access ul li {
+		color: black;
+	}
+
    .nav-toggle {
 	display: none; /* hidden on wide screens */
 	background: transparent;
