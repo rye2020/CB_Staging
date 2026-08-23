@@ -305,6 +305,10 @@ button.sub-menu-toggle {
 		color: black;
 	}
 
+	#main {
+		padding: 0;
+	}
+
    .nav-toggle {
 	display: none; /* hidden on wide screens */
 	background: transparent;
