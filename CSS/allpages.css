@@ -526,7 +526,7 @@ nav.navigation.post-navigation {
 /*-------------------RESPONSIVE ISSUANCE TABLES----------------------------*/
 /*                                                                         */
 
-@media only screen and (max-width: 481px) and (min-width: 375px) and (orientation: portrait) {
+@media only screen and (max-width: 789px) and (orientation: portrait) {
 	body {
 		width: auto;
 		Max-width: 100%;
