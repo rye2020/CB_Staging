@@ -516,6 +516,7 @@ nav.navigation.post-navigation {
 	}
 	#page {
 		padding: 0 1em;
+		margin:0;
 	}
 
 	#main #content {
