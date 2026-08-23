@@ -623,9 +623,15 @@ nav.navigation.post-navigation {
 }
 
 
-@media only screen and (max-width: 768px) and (min-width: 482px) and (orientation: landscape) {
+@media only screen and (max-width: 789px) and (orientation: landscape) {
 	body {
 		max-width: 768px;
+	}
+
+	#page {
+		padding:0 3em;
+		max-width:95%;
+		margin: auto;
 	}
 
 	#main #content {
