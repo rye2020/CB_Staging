@@ -303,6 +303,7 @@ button.sub-menu-toggle {
 
 	#access a, .sub-menu a {
 		color: black;
+		background: lightblue;
 	}
 
 	#main {
