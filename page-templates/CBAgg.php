@@ -57,7 +57,7 @@ include( get_stylesheet_directory() . '/includes/FilterAGGtest.php');
          <!--***************************************************************************************-->
          <!--*******************************AGGREGATE ISSUANCE DATA*********************************-->
          <!--***************************************************************************************-->
-         <table class="t1CanadianCBD aggregateCB sortable" ; style="margin-left: 0; float:left;">
+         <table class="t1CanadianCBD aggregateCB sortable" style="margin-left: 0; float:left;">
             <thead>
                <tr>
                   <th><strong>Pricing</strong></th>
