@@ -593,6 +593,8 @@ nav.navigation.post-navigation {
 		border-bottom: 3px solid #ddd;
 		display: block;
 		margin-bottom: .625em;
+		max-width: 95%;
+
 	}
 
 	table.t1CanadianCBD td {
