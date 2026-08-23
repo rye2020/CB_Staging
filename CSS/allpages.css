@@ -303,12 +303,10 @@ button.sub-menu-toggle {
 
 	#access a {
 		color: black;
-		background: lightblue;
 	}
 
 	#access ul.sub-menu li a {
-		color:black;
-		background: blue;
+		color: black;
 	}
 
 	#main {
