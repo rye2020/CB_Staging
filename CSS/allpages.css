@@ -514,9 +514,11 @@ nav.navigation.post-navigation {
 		width: auto;
 		Max-width: 100%;
 	}
+	
 	#page {
-		padding: 0 1em;
-		margin:0;
+		padding:0 1em;
+		width:98%;
+		margin: 0;
 	}
 
 	#main #content {
