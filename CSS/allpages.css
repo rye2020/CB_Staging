@@ -301,7 +301,7 @@ button.sub-menu-toggle {
 		background: white;
 	}
 
-	#access ul ul a {
+	#access a, .sub-menu a {
 		color: black;
 	}
 
