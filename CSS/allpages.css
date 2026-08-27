@@ -309,9 +309,9 @@ button.sub-menu-toggle {
 		color: black;
 	}
 
-	#main {
+/*	#main {
 		padding: 0;
-	}
+	}  */
 
    .nav-toggle {
 	display: none; /* hidden on wide screens */
