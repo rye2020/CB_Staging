@@ -40,7 +40,7 @@ if ( isset( $_POST['SubmitCDN'] )) {
 
 	$page = $_POST['page'];
 	
-	$issuer = $_POST['issuerinterest'];
+	$issuer = $_POST['issuerselect'];
 		 if ($issuer !== "") {         
 		$like = $like."Issuer LIKE '%".$issuer."%'";
 		$title = $title."Issuer ";
