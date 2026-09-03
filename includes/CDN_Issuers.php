@@ -8,7 +8,7 @@
             <option value='Desjardins du Quebec'>Fédération des caisses Desjardins du Quebec</option>
             <option value='Equitable Bank'>Equitable Bank</option>
             <option value='HSBC Bank Canada'>HSBC Bank Canada</option>
-            <option value='Laurentian Bank of Canada'>Laurentian Bank of Canada</options>								  
+            <option value='Laurentian Bank of Canada'>Laurentian Bank of Canada</option>								  
             <option value='National Bank of Canada'>National Bank of Canada</option>
             <option value='Royal Bank of Canada'>Royal Bank of Canada</option>
             <option value='Toronto-Dominion Bank'>Toronto-Dominion Bank</option>
