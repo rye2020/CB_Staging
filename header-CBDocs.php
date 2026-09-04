@@ -154,12 +154,7 @@
 				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				<hr style="clear: both; background-color:white; height: 2px; margin: 0;" />
-					<?php 
-		//   JRM  load the tables menus   /////////////////////////////////////////////////
-                                       wp_nav_menu( array( 'theme_location' => 'primary', 
-                                                              'menu' => 'menu C') );
-   				
-                                 ?> 
+
 			</nav><!-- #access -->
 
 	</header><!-- #branding -->
