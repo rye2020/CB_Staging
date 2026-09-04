@@ -16,12 +16,13 @@ get_header("CBDocs" ); ?>
 
 </div></div></div>
 
+<div  style="max-width: 1600px; margin: auto auto;">
 <p style="font-family:'Georgia';font-variant:small-caps; font-size:80%; font-weight:700; margin: 0 0 0 0;">Updated: 2/18/2024</p>
 <article class="t1canadianCB">
 <!------------------------OFFERING DOCUMENTS---------------------------------------------->
 <h1 id="cdndocs">Canadian Covered Bond Documents</h1>
 <p><strong>Each Canadian issuer provides a copy of all program agreements and documents on its website.  A copy of each prospectus, offering materials for each offering, the various agreements that are part of the covered bond program, and copies of the monthly investor reports are available.</strong></p>
-<table id="cdndocs" style="max-width: 1600px">
+<table id="cdndocs">
     <tr style="text-align:center">
        <th>&nbsp;</th>
        <th>BMO</th>
@@ -222,6 +223,6 @@ get_header("CBDocs" ); ?>
 
 </table>
 </article>
-</div>
+</div></div>
 
 <?php get_footer(); ?>
