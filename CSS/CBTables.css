@@ -63,39 +63,17 @@ table.t1CanadianCBD th, td {
 }
 
 
-table.t1CanadianCBD th:nth-child(1) { 
-	column-width: 80;	
-	text-align: left; } /* align region left  */
-table.t1CanadianCBD th:nth-child(2) { 
-	column-width: 220; 
-	text-align: left; } /* align region left  */
-table.t1CanadianCBD th:nth-child(3) { 
-	column-width: 30; 
-	text-align: left; } /* align region left  */
-table.t1CanadianCBD th:nth-child(4) { 
-	column-width: 50; 
-	text-align: left; } /* align series left  */
-table.t1CanadianCBD th:nth-child(5) { 
-	column-width: 25; 
-	text-align: right; } /* align currency right  */
-table.t1CanadianCBD th:nth-child(6) { 
-	column-width: 35; 
-	text-align: right; } /* align amount right  */
-table.t1CanadianCBD th:nth-child(7) {
-	column-width: 25;
-	text-align: right; } /* align coupon right  */
-table.t1CanadianCBD th:nth-child(8) {
-	column-width: 60;
-	text-align: right; } /* align maturity right  */
-table.t1CanadianCBD th:nth-child(9) { 
-	column-width: 25;
-	text-align: right; } /* align tenor right  */
-table.t1CanadianCBD th:nth-child(10) {
-	column-width: 25;
-	text-align: right; } /* align spread right  */
-table.t1CanadianCBD th:nth-child(11) {
-	column-width: 60;
-	text-align: right; } /* align type right  */
+table.t1CanadianCBD th:nth-child(1) { column-width: 80; text-align: left; } /* align region left  */
+table.t1CanadianCBD th:nth-child(2) { column-width: 220; text-align: left; } /* align region left  */
+table.t1CanadianCBD th:nth-child(3) { column-width: 30; text-align: left; } /* align region left  */
+table.t1CanadianCBD th:nth-child(4) { column-width: 50; text-align: left; } /* align series left  */
+table.t1CanadianCBD th:nth-child(5) { column-width: 25; text-align: right; } /* align currency right  */
+table.t1CanadianCBD th:nth-child(6) { column-width: 35; text-align: right; } /* align amount right  */
+table.t1CanadianCBD th:nth-child(7) { column-width: 25; text-align: right; } /* align coupon right  */
+table.t1CanadianCBD th:nth-child(8) { column-width: 60;	text-align: right; } /* align maturity right  */
+table.t1CanadianCBD th:nth-child(9) { column-width: 25;	text-align: right; } /* align tenor right  */
+table.t1CanadianCBD th:nth-child(10) { column-width: 25; text-align: right; } /* align spread right  */
+table.t1CanadianCBD th:nth-child(11) { column-width: 60; text-align: right; } /* align type right  */
 
 table.t1CanadianCBD tr:nth-child(even) { background-color: #B2B2FF; }
 table.t1CanadianCBD td:nth-child(3) { text-align: left; } /* align region left  */
