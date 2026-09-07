@@ -98,7 +98,7 @@ body {
 	clear: left;
 }
 
-.jmpost .entry-header {
+article .entry-header {
 	display: none;
 }
 
