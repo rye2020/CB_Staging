@@ -98,6 +98,10 @@ body {
 	clear: left;
 }
 
+.jmpost .entry-header {
+	display: none;
+}
+
 footer {
 	clear: both;
 	text-align: center;
