@@ -8,7 +8,7 @@
      max-width: 750px;
 }
 .entry-content p {
-     text-family: georgia;
+     font-family: georgia;
      text-align: justify;
 }
 .entry-content .wp-block-image {
