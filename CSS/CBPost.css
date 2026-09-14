@@ -3,15 +3,18 @@
 *
 ************************************/
 .entry-title {display: none;}
-.singular .entry-content{width: 750px;}
-.singular .entry-content p {
+.entry-content{
+     width: 750px;
+     max-width: 750px;
+}
+.entry-content p {
      text-family: georgia;
      text-align: justify;
 }
 .entry-content .wp-block-image {
      margin:0 auto 1em auto;
 }
-.entry-content, .wp-block-image, img {
+.entry-content .wp-block-image img {
      margin: 0  auto;
      max-width: 750px;
      display: block;
