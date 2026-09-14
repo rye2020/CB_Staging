@@ -11,7 +11,7 @@
 .entry-content .wp-block-image {
      margin:0 auto 1em auto;
 }
-.entry-content .wp-block-image img {
+.entry-content, .wp-block-image, img {
      margin: 0  auto;
      max-width: 750px;
      display: block;
