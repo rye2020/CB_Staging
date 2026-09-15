@@ -111,7 +111,7 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
     $query = 'SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME="' . $table . '"';
     $colnames = $wpdb->get_results($query, ARRAY_N);
     $zcol = count($colnames);
-    /*****************************************//
+    /*****************************************/
  /*   echo "<pre>";
     var_dump($colnames);
     echo "</pre>";  */
