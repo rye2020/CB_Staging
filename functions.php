@@ -176,7 +176,7 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
                 /*************************************************/
                 if ($z = 1) {
                     echo "<pre>";
-                    var_dump($element);
+                    echo $element;
                     echo "</pre>";
                 }
                 /**************************************************/
