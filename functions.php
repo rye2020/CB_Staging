@@ -174,10 +174,11 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
                 }
                 echo '<td data-label="' . $colnames[$x][0] . '">' . $element . '</td>';
                 /*************************************************/
-                if ($z = 1){
+                if ($z = 1) {
                     echo "<pre>";
                     var_dump($element);
                     echo "</pre>";
+                }
                 /**************************************************/
                 skipcomments:
             }
