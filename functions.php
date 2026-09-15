@@ -114,7 +114,7 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
     /*****************************************//
     echo "<pre>";
     var_dump($colnames);
-    cho "</pre>";
+    echo "</pre>";
     /*****************************************/
     
 
