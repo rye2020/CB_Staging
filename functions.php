@@ -112,9 +112,9 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
     $colnames = $wpdb->get_results($query, ARRAY_N);
     $zcol = count($colnames);
     /*****************************************/
-    echo "<pre>";
+/*    echo "<pre>";
     var_dump($colnames);
-    echo "</pre>";  
+    echo "</pre>";  */
     /*****************************************/
     
 
@@ -174,11 +174,11 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
                 }
                 echo '<td data-label="' . $colnames[$x][0] . '">' . $element . '</td>';
                 /*************************************************/
-               if ($y = 0) {
+       /*        if ($y = 0) {
                     echo "<pre>";
                     echo $element;
                     echo "</pre>";
-                }  
+                }  */
                 /**************************************************/
                 skipcomments:
             }
