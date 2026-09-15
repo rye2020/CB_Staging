@@ -174,7 +174,7 @@ function jrm_get_table($table, $like, $sum, $col, $index = null, $orderby = null
                 }
                 echo '<td data-label="' . $colnames[$x][0] . '">' . $element . '</td>';
                 /*************************************************/
-               if ($z == 1) {
+               if ($y == 1) {
                     echo "<pre>";
                     echo $element;
                     echo "</pre>";
